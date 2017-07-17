@@ -1,0 +1,157 @@
+@font-face {
+    font-family: koz;
+    src: url(../fonts/koz-l.otf);
+}
+
+body {
+  min-width: 1920px;
+  min-height: 1080px;
+  max-width: 2560px;
+  max-height: 1440px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#main, #top{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #CCC;
+}
+
+.container {
+  position: absolute;
+  font-family: koz, Helvetica, Arial;
+  width: 480px;
+  height: 22.22%;
+  transform: translateX(-50%) translateY(-50%);
+  display: grid;
+}
+
+.tab-logo {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 100%;
+    width: 100%;
+}
+
+.tab-text{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 120px;
+  margin: auto;
+  font-size: 36pt;
+  font-size: 3vw;
+}
+
+.tab-en{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.tab-jp{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/*name*/
+
+#name{
+  top: 50%;
+  left: 50%;
+  grid-template-columns: repeat(10, 48px);
+  grid-template-rows: repeat(2, 120px);
+}
+
+.name p{
+  line-height: 120px;
+  font-size: 36pt;
+  font-size: 4.5vw;
+  margin: auto;
+}
+
+.name-en{
+  text-align: left;
+  border-right: 1px dashed #000;
+  color: #FFF;
+}
+
+.name-jp{
+  text-align: right;
+  color: #FFF;
+}
+
+#first-en{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  border-bottom: 1px dashed #000;
+}
+
+#last-jp{
+  grid-column-start: 5;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  border-bottom: 1px dashed #000;
+}
+
+#last-en{
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#first-jp{
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/*works*/
+
+#works{
+  top: 77.77%;
+  left: 21.875%;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: repeat(2, 120px);
+}
+
+/*blog*/
+
+#blog{
+  width: 360px;
+  top: 77.77%;
+  left: 46.875%;
+  grid-template-columns: repeat(4, 90px);
+  grid-template-rows: repeat(2, 120px);
+}
+
+/*about*/
+
+#about{
+  top: 77.77%;
+  left: 75%;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: repeat(2, 120px);
+}
