@@ -110,7 +110,7 @@
 
 
 	// module
-	exports.push([module.id, "@font-face {\n    font-family: koz;\n    src: url(" + __webpack_require__(6) + ");\n}\n\nbody {\n  min-width: 1600px;\n  min-height: 900px;\n  max-width: 2560px;\n  max-height: 1440px;\n  width: 100%;\n  height: 100%;\n  position: absolute;\n}\n\n#main, #top{\n  position: absolute;\n  width: 100%;\n  height: 100%;\n}\n\na {\n  color: #FFF;\n  text-decoration: none;\n}\n\na:hover{\n  color: #CCC;\n}\n\n.container {\n  position: absolute;\n  font-family: koz, Helvetica, Arial;\n  width: 400px;\n  height: 200px;\n  transform: translateX(-50%) translateY(-50%);\n  display: grid;\n}\n\n.tab-logo {\n    display: block;\n    grid-column-start: 1;\n    grid-column-end: 3;\n    grid-row-start: 1;\n    grid-row-end: 3;\n    height: 100%;\n    width: 100%;\n}\n\n.tab-text{\n  height: 100%;\n  width: 100%;\n  text-align: center;\n  line-height: 100px;\n  margin: auto;\n  font-size: 36pt;\n  font-size: 2vw;\n}\n\n.tab-en{\n    grid-column-start: 3;\n    grid-column-end: 5;\n    grid-row-start: 1;\n    grid-row-end: 2;\n}\n\n.tab-jp{\n  grid-column-start: 3;\n  grid-column-end: 5;\n  grid-row-start: 2;\n  grid-row-end: 3;\n}\n\n/*name*/\n\n#name{\n  top: 50%;\n  left: 50%;\n  grid-template-columns: repeat(10, 40px);\n  grid-template-rows: repeat(2, 100px);\n}\n\n.name p{\n  line-height: 100px;\n  font-size: 36pt;\n  font-size: 2.5vw;\n  margin: auto;\n}\n\n.name-en{\n  text-align: left;\n  border-right: 1px dashed #000;\n  color: #FFF;\n}\n\n.name-jp{\n  text-align: right;\n  color: #FFF;\n}\n\n#first-en{\n  grid-column-start: 1;\n  grid-column-end: 5;\n  grid-row-start: 1;\n  grid-row-end: 1;\n  border-bottom: 1px dashed #000;\n}\n\n#last-jp{\n  grid-column-start: 5;\n  grid-column-end: 11;\n  grid-row-start: 1;\n  grid-row-end: 1;\n  border-bottom: 1px dashed #000;\n}\n\n#last-en{\n  grid-column-start: 1;\n  grid-column-end: 7;\n  grid-row-start: 2;\n  grid-row-end: 3;\n}\n\n#first-jp{\n  grid-column-start: 7;\n  grid-column-end: 11;\n  grid-row-start: 2;\n  grid-row-end: 3;\n}\n\n/*works*/\n\n#works{\n  top: 77.77%;\n  left: 21.875%;\n  grid-template-columns: repeat(4, 100px);\n  grid-template-rows: repeat(2, 100px);\n}\n\n/*blog*/\n\n#blog{\n  width: 300px;\n  top: 77.77%;\n  left: 46.875%;\n  grid-template-columns: repeat(4, 75px);\n  grid-template-rows: repeat(2, 100px);\n}\n\n/*about*/\n\n#about{\n  top: 77.77%;\n  left: 75%;\n  grid-template-columns: repeat(4, 100px);\n  grid-template-rows: repeat(2, 100px);\n}\n", ""]);
+	exports.push([module.id, "@font-face {\n    font-family: koz;\n    font-style: normal;\n    font-weight: 400;\n    src: url(" + __webpack_require__(6) + ");\n}\n\nbody {\n  min-width: 1600px;\n  min-height: 900px;\n  max-width: 2560px;\n  max-height: 1440px;\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  background-color: #000;\n}\n\np, h1, h2, h3, h4, h5, h6, a{\n  font-family: koz, Helvetica, sans-serif;\n}\n\n#main{\n  position: absolute;\n  width: 100%;\n  min-height: 100%;\n}\n\na {\n  color: #FFF;\n  text-decoration: none;\n}\n\n.selected {\n  background-color: rgba(255,255,255,0.3);\n}\n\n.tab {\n  font-family: koz, Helvetica, sans-serif;\n  width: 400px;\n  height: 200px;\n  display: grid;\n}\n\n.tab:hover {\n  background-color: rgba(255,255,255,0.3);\n}\n\n.tab-logo {\n  display: block;\n  grid-column-start: 1;\n  grid-column-end: 3;\n  grid-row-start: 1;\n  grid-row-end: 3;\n  width: 100%;\n  height: auto;\n}\n\n.tab-text{\n  height: 100%;\n  width: 100%;\n  text-align: center;\n  line-height: 100px;\n  margin: auto;\n  font-size: 28pt;\n}\n\n.tab-en{\n  grid-column-start: 3;\n  grid-column-end: 5;\n  grid-row-start: 1;\n  grid-row-end: 2;\n}\n\n.tab-jp{\n  grid-column-start: 3;\n  grid-column-end: 5;\n  grid-row-start: 2;\n  grid-row-end: 3;\n}\n\n.name-en{\n  text-align: left;\n  border-right: 1px dashed #FFF;\n  color: #FFF;\n}\n\n.name-jp{\n  text-align: right;\n  color: #FFF;\n}\n\n.work a:hover {\n  background-color: rgba(255,255,255,0.3);\n  transition: background-color 0.15s ease-in;\n}\n", ""]);
 
 	// exports
 
@@ -10288,6 +10288,146 @@
 		});
 	_elm_lang$core$Native_Platform.effectManagers['Navigation'] = {pkg: 'elm-lang/navigation', init: _elm_lang$navigation$Navigation$init, onEffects: _elm_lang$navigation$Navigation$onEffects, onSelfMsg: _elm_lang$navigation$Navigation$onSelfMsg, tag: 'fx', cmdMap: _elm_lang$navigation$Navigation$cmdMap, subMap: _elm_lang$navigation$Navigation$subMap};
 
+	var _evancz$elm_markdown$Native_Markdown = function() {
+
+
+	// VIRTUAL-DOM WIDGETS
+
+	function toHtml(options, factList, rawMarkdown)
+	{
+		var model = {
+			options: options,
+			markdown: rawMarkdown
+		};
+		return _elm_lang$virtual_dom$Native_VirtualDom.custom(factList, model, implementation);
+	}
+
+
+	// WIDGET IMPLEMENTATION
+
+	var implementation = {
+		render: render,
+		diff: diff
+	};
+
+	function render(model)
+	{
+		var html = marked(model.markdown, formatOptions(model.options));
+		var div = document.createElement('div');
+		div.innerHTML = html;
+		return div;
+	}
+
+	function diff(a, b)
+	{
+		
+		if (a.model.markdown === b.model.markdown && a.model.options === b.model.options)
+		{
+			return null;
+		}
+
+		return {
+			applyPatch: applyPatch,
+			data: marked(b.model.markdown, formatOptions(b.model.options))
+		};
+	}
+
+	function applyPatch(domNode, data)
+	{
+		domNode.innerHTML = data;
+		return domNode;
+	}
+
+
+	// ACTUAL MARKDOWN PARSER
+
+	var marked = function() {
+		// catch the `marked` object regardless of the outer environment.
+		// (ex. a CommonJS module compatible environment.)
+		// note that this depends on marked's implementation of environment detection.
+		var module = {};
+		var exports = module.exports = {};
+
+		/**
+		 * marked - a markdown parser
+		 * Copyright (c) 2011-2014, Christopher Jeffrey. (MIT Licensed)
+		 * https://github.com/chjj/marked
+		 * commit cd2f6f5b7091154c5526e79b5f3bfb4d15995a51
+		 */
+		(function(){var block={newline:/^\n+/,code:/^( {4}[^\n]+\n*)+/,fences:noop,hr:/^( *[-*_]){3,} *(?:\n+|$)/,heading:/^ *(#{1,6}) *([^\n]+?) *#* *(?:\n+|$)/,nptable:noop,lheading:/^([^\n]+)\n *(=|-){2,} *(?:\n+|$)/,blockquote:/^( *>[^\n]+(\n(?!def)[^\n]+)*\n*)+/,list:/^( *)(bull) [\s\S]+?(?:hr|def|\n{2,}(?! )(?!\1bull )\n*|\s*$)/,html:/^ *(?:comment *(?:\n|\s*$)|closed *(?:\n{2,}|\s*$)|closing *(?:\n{2,}|\s*$))/,def:/^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +["(]([^\n]+)[")])? *(?:\n+|$)/,table:noop,paragraph:/^((?:[^\n]+\n?(?!hr|heading|lheading|blockquote|tag|def))+)\n*/,text:/^[^\n]+/};block.bullet=/(?:[*+-]|\d+\.)/;block.item=/^( *)(bull) [^\n]*(?:\n(?!\1bull )[^\n]*)*/;block.item=replace(block.item,"gm")(/bull/g,block.bullet)();block.list=replace(block.list)(/bull/g,block.bullet)("hr","\\n+(?=\\1?(?:[-*_] *){3,}(?:\\n+|$))")("def","\\n+(?="+block.def.source+")")();block.blockquote=replace(block.blockquote)("def",block.def)();block._tag="(?!(?:"+"a|em|strong|small|s|cite|q|dfn|abbr|data|time|code"+"|var|samp|kbd|sub|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo"+"|span|br|wbr|ins|del|img)\\b)\\w+(?!:/|[^\\w\\s@]*@)\\b";block.html=replace(block.html)("comment",/<!--[\s\S]*?-->/)("closed",/<(tag)[\s\S]+?<\/\1>/)("closing",/<tag(?:"[^"]*"|'[^']*'|[^'">])*?>/)(/tag/g,block._tag)();block.paragraph=replace(block.paragraph)("hr",block.hr)("heading",block.heading)("lheading",block.lheading)("blockquote",block.blockquote)("tag","<"+block._tag)("def",block.def)();block.normal=merge({},block);block.gfm=merge({},block.normal,{fences:/^ *(`{3,}|~{3,})[ \.]*(\S+)? *\n([\s\S]*?)\s*\1 *(?:\n+|$)/,paragraph:/^/,heading:/^ *(#{1,6}) +([^\n]+?) *#* *(?:\n+|$)/});block.gfm.paragraph=replace(block.paragraph)("(?!","(?!"+block.gfm.fences.source.replace("\\1","\\2")+"|"+block.list.source.replace("\\1","\\3")+"|")();block.tables=merge({},block.gfm,{nptable:/^ *(\S.*\|.*)\n *([-:]+ *\|[-| :]*)\n((?:.*\|.*(?:\n|$))*)\n*/,table:/^ *\|(.+)\n *\|( *[-:]+[-| :]*)\n((?: *\|.*(?:\n|$))*)\n*/});function Lexer(options){this.tokens=[];this.tokens.links={};this.options=options||marked.defaults;this.rules=block.normal;if(this.options.gfm){if(this.options.tables){this.rules=block.tables}else{this.rules=block.gfm}}}Lexer.rules=block;Lexer.lex=function(src,options){var lexer=new Lexer(options);return lexer.lex(src)};Lexer.prototype.lex=function(src){src=src.replace(/\r\n|\r/g,"\n").replace(/\t/g,"    ").replace(/\u00a0/g," ").replace(/\u2424/g,"\n");return this.token(src,true)};Lexer.prototype.token=function(src,top,bq){var src=src.replace(/^ +$/gm,""),next,loose,cap,bull,b,item,space,i,l;while(src){if(cap=this.rules.newline.exec(src)){src=src.substring(cap[0].length);if(cap[0].length>1){this.tokens.push({type:"space"})}}if(cap=this.rules.code.exec(src)){src=src.substring(cap[0].length);cap=cap[0].replace(/^ {4}/gm,"");this.tokens.push({type:"code",text:!this.options.pedantic?cap.replace(/\n+$/,""):cap});continue}if(cap=this.rules.fences.exec(src)){src=src.substring(cap[0].length);this.tokens.push({type:"code",lang:cap[2],text:cap[3]||""});continue}if(cap=this.rules.heading.exec(src)){src=src.substring(cap[0].length);this.tokens.push({type:"heading",depth:cap[1].length,text:cap[2]});continue}if(top&&(cap=this.rules.nptable.exec(src))){src=src.substring(cap[0].length);item={type:"table",header:cap[1].replace(/^ *| *\| *$/g,"").split(/ *\| */),align:cap[2].replace(/^ *|\| *$/g,"").split(/ *\| */),cells:cap[3].replace(/\n$/,"").split("\n")};for(i=0;i<item.align.length;i++){if(/^ *-+: *$/.test(item.align[i])){item.align[i]="right"}else if(/^ *:-+: *$/.test(item.align[i])){item.align[i]="center"}else if(/^ *:-+ *$/.test(item.align[i])){item.align[i]="left"}else{item.align[i]=null}}for(i=0;i<item.cells.length;i++){item.cells[i]=item.cells[i].split(/ *\| */)}this.tokens.push(item);continue}if(cap=this.rules.lheading.exec(src)){src=src.substring(cap[0].length);this.tokens.push({type:"heading",depth:cap[2]==="="?1:2,text:cap[1]});continue}if(cap=this.rules.hr.exec(src)){src=src.substring(cap[0].length);this.tokens.push({type:"hr"});continue}if(cap=this.rules.blockquote.exec(src)){src=src.substring(cap[0].length);this.tokens.push({type:"blockquote_start"});cap=cap[0].replace(/^ *> ?/gm,"");this.token(cap,top,true);this.tokens.push({type:"blockquote_end"});continue}if(cap=this.rules.list.exec(src)){src=src.substring(cap[0].length);bull=cap[2];this.tokens.push({type:"list_start",ordered:bull.length>1});cap=cap[0].match(this.rules.item);next=false;l=cap.length;i=0;for(;i<l;i++){item=cap[i];space=item.length;item=item.replace(/^ *([*+-]|\d+\.) +/,"");if(~item.indexOf("\n ")){space-=item.length;item=!this.options.pedantic?item.replace(new RegExp("^ {1,"+space+"}","gm"),""):item.replace(/^ {1,4}/gm,"")}if(this.options.smartLists&&i!==l-1){b=block.bullet.exec(cap[i+1])[0];if(bull!==b&&!(bull.length>1&&b.length>1)){src=cap.slice(i+1).join("\n")+src;i=l-1}}loose=next||/\n\n(?!\s*$)/.test(item);if(i!==l-1){next=item.charAt(item.length-1)==="\n";if(!loose)loose=next}this.tokens.push({type:loose?"loose_item_start":"list_item_start"});this.token(item,false,bq);this.tokens.push({type:"list_item_end"})}this.tokens.push({type:"list_end"});continue}if(cap=this.rules.html.exec(src)){src=src.substring(cap[0].length);this.tokens.push({type:this.options.sanitize?"paragraph":"html",pre:!this.options.sanitizer&&(cap[1]==="pre"||cap[1]==="script"||cap[1]==="style"),text:cap[0]});continue}if(!bq&&top&&(cap=this.rules.def.exec(src))){src=src.substring(cap[0].length);this.tokens.links[cap[1].toLowerCase()]={href:cap[2],title:cap[3]};continue}if(top&&(cap=this.rules.table.exec(src))){src=src.substring(cap[0].length);item={type:"table",header:cap[1].replace(/^ *| *\| *$/g,"").split(/ *\| */),align:cap[2].replace(/^ *|\| *$/g,"").split(/ *\| */),cells:cap[3].replace(/(?: *\| *)?\n$/,"").split("\n")};for(i=0;i<item.align.length;i++){if(/^ *-+: *$/.test(item.align[i])){item.align[i]="right"}else if(/^ *:-+: *$/.test(item.align[i])){item.align[i]="center"}else if(/^ *:-+ *$/.test(item.align[i])){item.align[i]="left"}else{item.align[i]=null}}for(i=0;i<item.cells.length;i++){item.cells[i]=item.cells[i].replace(/^ *\| *| *\| *$/g,"").split(/ *\| */)}this.tokens.push(item);continue}if(top&&(cap=this.rules.paragraph.exec(src))){src=src.substring(cap[0].length);this.tokens.push({type:"paragraph",text:cap[1].charAt(cap[1].length-1)==="\n"?cap[1].slice(0,-1):cap[1]});continue}if(cap=this.rules.text.exec(src)){src=src.substring(cap[0].length);this.tokens.push({type:"text",text:cap[0]});continue}if(src){throw new Error("Infinite loop on byte: "+src.charCodeAt(0))}}return this.tokens};var inline={escape:/^\\([\\`*{}\[\]()#+\-.!_>])/,autolink:/^<([^ >]+(@|:\/)[^ >]+)>/,url:noop,tag:/^<!--[\s\S]*?-->|^<\/?\w+(?:"[^"]*"|'[^']*'|[^'">])*?>/,link:/^!?\[(inside)\]\(href\)/,reflink:/^!?\[(inside)\]\s*\[([^\]]*)\]/,nolink:/^!?\[((?:\[[^\]]*\]|[^\[\]])*)\]/,strong:/^__([\s\S]+?)__(?!_)|^\*\*([\s\S]+?)\*\*(?!\*)/,em:/^\b_((?:[^_]|__)+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,code:/^(`+)\s*([\s\S]*?[^`])\s*\1(?!`)/,br:/^ {2,}\n(?!\s*$)/,del:noop,text:/^[\s\S]+?(?=[\\<!\[_*`]| {2,}\n|$)/};inline._inside=/(?:\[[^\]]*\]|[^\[\]]|\](?=[^\[]*\]))*/;inline._href=/\s*<?([\s\S]*?)>?(?:\s+['"]([\s\S]*?)['"])?\s*/;inline.link=replace(inline.link)("inside",inline._inside)("href",inline._href)();inline.reflink=replace(inline.reflink)("inside",inline._inside)();inline.normal=merge({},inline);inline.pedantic=merge({},inline.normal,{strong:/^__(?=\S)([\s\S]*?\S)__(?!_)|^\*\*(?=\S)([\s\S]*?\S)\*\*(?!\*)/,em:/^_(?=\S)([\s\S]*?\S)_(?!_)|^\*(?=\S)([\s\S]*?\S)\*(?!\*)/});inline.gfm=merge({},inline.normal,{escape:replace(inline.escape)("])","~|])")(),url:/^(https?:\/\/[^\s<]+[^<.,:;"')\]\s])/,del:/^~~(?=\S)([\s\S]*?\S)~~/,text:replace(inline.text)("]|","~]|")("|","|https?://|")()});inline.breaks=merge({},inline.gfm,{br:replace(inline.br)("{2,}","*")(),text:replace(inline.gfm.text)("{2,}","*")()});function InlineLexer(links,options){this.options=options||marked.defaults;this.links=links;this.rules=inline.normal;this.renderer=this.options.renderer||new Renderer;this.renderer.options=this.options;if(!this.links){throw new Error("Tokens array requires a `links` property.")}if(this.options.gfm){if(this.options.breaks){this.rules=inline.breaks}else{this.rules=inline.gfm}}else if(this.options.pedantic){this.rules=inline.pedantic}}InlineLexer.rules=inline;InlineLexer.output=function(src,links,options){var inline=new InlineLexer(links,options);return inline.output(src)};InlineLexer.prototype.output=function(src){var out="",link,text,href,cap;while(src){if(cap=this.rules.escape.exec(src)){src=src.substring(cap[0].length);out+=cap[1];continue}if(cap=this.rules.autolink.exec(src)){src=src.substring(cap[0].length);if(cap[2]==="@"){text=cap[1].charAt(6)===":"?this.mangle(cap[1].substring(7)):this.mangle(cap[1]);href=this.mangle("mailto:")+text}else{text=escape(cap[1]);href=text}out+=this.renderer.link(href,null,text);continue}if(!this.inLink&&(cap=this.rules.url.exec(src))){src=src.substring(cap[0].length);text=escape(cap[1]);href=text;out+=this.renderer.link(href,null,text);continue}if(cap=this.rules.tag.exec(src)){if(!this.inLink&&/^<a /i.test(cap[0])){this.inLink=true}else if(this.inLink&&/^<\/a>/i.test(cap[0])){this.inLink=false}src=src.substring(cap[0].length);out+=this.options.sanitize?this.options.sanitizer?this.options.sanitizer(cap[0]):escape(cap[0]):cap[0];continue}if(cap=this.rules.link.exec(src)){src=src.substring(cap[0].length);this.inLink=true;out+=this.outputLink(cap,{href:cap[2],title:cap[3]});this.inLink=false;continue}if((cap=this.rules.reflink.exec(src))||(cap=this.rules.nolink.exec(src))){src=src.substring(cap[0].length);link=(cap[2]||cap[1]).replace(/\s+/g," ");link=this.links[link.toLowerCase()];if(!link||!link.href){out+=cap[0].charAt(0);src=cap[0].substring(1)+src;continue}this.inLink=true;out+=this.outputLink(cap,link);this.inLink=false;continue}if(cap=this.rules.strong.exec(src)){src=src.substring(cap[0].length);out+=this.renderer.strong(this.output(cap[2]||cap[1]));continue}if(cap=this.rules.em.exec(src)){src=src.substring(cap[0].length);out+=this.renderer.em(this.output(cap[2]||cap[1]));continue}if(cap=this.rules.code.exec(src)){src=src.substring(cap[0].length);out+=this.renderer.codespan(escape(cap[2],true));continue}if(cap=this.rules.br.exec(src)){src=src.substring(cap[0].length);out+=this.renderer.br();continue}if(cap=this.rules.del.exec(src)){src=src.substring(cap[0].length);out+=this.renderer.del(this.output(cap[1]));continue}if(cap=this.rules.text.exec(src)){src=src.substring(cap[0].length);out+=this.renderer.text(escape(this.smartypants(cap[0])));continue}if(src){throw new Error("Infinite loop on byte: "+src.charCodeAt(0))}}return out};InlineLexer.prototype.outputLink=function(cap,link){var href=escape(link.href),title=link.title?escape(link.title):null;return cap[0].charAt(0)!=="!"?this.renderer.link(href,title,this.output(cap[1])):this.renderer.image(href,title,escape(cap[1]))};InlineLexer.prototype.smartypants=function(text){if(!this.options.smartypants)return text;return text.replace(/---/g,"—").replace(/--/g,"–").replace(/(^|[-\u2014\/(\[{"\s])'/g,"$1‘").replace(/'/g,"’").replace(/(^|[-\u2014\/(\[{\u2018\s])"/g,"$1“").replace(/"/g,"”").replace(/\.{3}/g,"…")};InlineLexer.prototype.mangle=function(text){if(!this.options.mangle)return text;var out="",l=text.length,i=0,ch;for(;i<l;i++){ch=text.charCodeAt(i);if(Math.random()>.5){ch="x"+ch.toString(16)}out+="&#"+ch+";"}return out};function Renderer(options){this.options=options||{}}Renderer.prototype.code=function(code,lang,escaped){if(this.options.highlight){var out=this.options.highlight(code,lang);if(out!=null&&out!==code){escaped=true;code=out}}if(!lang){return"<pre><code>"+(escaped?code:escape(code,true))+"\n</code></pre>"}return'<pre><code class="'+this.options.langPrefix+escape(lang,true)+'">'+(escaped?code:escape(code,true))+"\n</code></pre>\n"};Renderer.prototype.blockquote=function(quote){return"<blockquote>\n"+quote+"</blockquote>\n"};Renderer.prototype.html=function(html){return html};Renderer.prototype.heading=function(text,level,raw){return"<h"+level+' id="'+this.options.headerPrefix+raw.toLowerCase().replace(/[^\w]+/g,"-")+'">'+text+"</h"+level+">\n"};Renderer.prototype.hr=function(){return this.options.xhtml?"<hr/>\n":"<hr>\n"};Renderer.prototype.list=function(body,ordered){var type=ordered?"ol":"ul";return"<"+type+">\n"+body+"</"+type+">\n"};Renderer.prototype.listitem=function(text){return"<li>"+text+"</li>\n"};Renderer.prototype.paragraph=function(text){return"<p>"+text+"</p>\n"};Renderer.prototype.table=function(header,body){return"<table>\n"+"<thead>\n"+header+"</thead>\n"+"<tbody>\n"+body+"</tbody>\n"+"</table>\n"};Renderer.prototype.tablerow=function(content){return"<tr>\n"+content+"</tr>\n"};Renderer.prototype.tablecell=function(content,flags){var type=flags.header?"th":"td";var tag=flags.align?"<"+type+' style="text-align:'+flags.align+'">':"<"+type+">";return tag+content+"</"+type+">\n"};Renderer.prototype.strong=function(text){return"<strong>"+text+"</strong>"};Renderer.prototype.em=function(text){return"<em>"+text+"</em>"};Renderer.prototype.codespan=function(text){return"<code>"+text+"</code>"};Renderer.prototype.br=function(){return this.options.xhtml?"<br/>":"<br>"};Renderer.prototype.del=function(text){return"<del>"+text+"</del>"};Renderer.prototype.link=function(href,title,text){if(this.options.sanitize){try{var prot=decodeURIComponent(unescape(href)).replace(/[^\w:]/g,"").toLowerCase()}catch(e){return""}if(prot.indexOf("javascript:")===0||prot.indexOf("vbscript:")===0||prot.indexOf("data:")===0){return""}}var out='<a href="'+href+'"';if(title){out+=' title="'+title+'"'}out+=">"+text+"</a>";return out};Renderer.prototype.image=function(href,title,text){var out='<img src="'+href+'" alt="'+text+'"';if(title){out+=' title="'+title+'"'}out+=this.options.xhtml?"/>":">";return out};Renderer.prototype.text=function(text){return text};function Parser(options){this.tokens=[];this.token=null;this.options=options||marked.defaults;this.options.renderer=this.options.renderer||new Renderer;this.renderer=this.options.renderer;this.renderer.options=this.options}Parser.parse=function(src,options,renderer){var parser=new Parser(options,renderer);return parser.parse(src)};Parser.prototype.parse=function(src){this.inline=new InlineLexer(src.links,this.options,this.renderer);this.tokens=src.reverse();var out="";while(this.next()){out+=this.tok()}return out};Parser.prototype.next=function(){return this.token=this.tokens.pop()};Parser.prototype.peek=function(){return this.tokens[this.tokens.length-1]||0};Parser.prototype.parseText=function(){var body=this.token.text;while(this.peek().type==="text"){body+="\n"+this.next().text}return this.inline.output(body)};Parser.prototype.tok=function(){switch(this.token.type){case"space":{return""}case"hr":{return this.renderer.hr()}case"heading":{return this.renderer.heading(this.inline.output(this.token.text),this.token.depth,this.token.text)}case"code":{return this.renderer.code(this.token.text,this.token.lang,this.token.escaped)}case"table":{var header="",body="",i,row,cell,flags,j;cell="";for(i=0;i<this.token.header.length;i++){flags={header:true,align:this.token.align[i]};cell+=this.renderer.tablecell(this.inline.output(this.token.header[i]),{header:true,align:this.token.align[i]})}header+=this.renderer.tablerow(cell);for(i=0;i<this.token.cells.length;i++){row=this.token.cells[i];cell="";for(j=0;j<row.length;j++){cell+=this.renderer.tablecell(this.inline.output(row[j]),{header:false,align:this.token.align[j]})}body+=this.renderer.tablerow(cell)}return this.renderer.table(header,body)}case"blockquote_start":{var body="";while(this.next().type!=="blockquote_end"){body+=this.tok()}return this.renderer.blockquote(body)}case"list_start":{var body="",ordered=this.token.ordered;while(this.next().type!=="list_end"){body+=this.tok()}return this.renderer.list(body,ordered)}case"list_item_start":{var body="";while(this.next().type!=="list_item_end"){body+=this.token.type==="text"?this.parseText():this.tok()}return this.renderer.listitem(body)}case"loose_item_start":{var body="";while(this.next().type!=="list_item_end"){body+=this.tok()}return this.renderer.listitem(body)}case"html":{var html=!this.token.pre&&!this.options.pedantic?this.inline.output(this.token.text):this.token.text;return this.renderer.html(html)}case"paragraph":{return this.renderer.paragraph(this.inline.output(this.token.text))}case"text":{return this.renderer.paragraph(this.parseText())}}};function escape(html,encode){return html.replace(!encode?/&(?!#?\w+;)/g:/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;")}function unescape(html){return html.replace(/&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/g,function(_,n){n=n.toLowerCase();if(n==="colon")return":";if(n.charAt(0)==="#"){return n.charAt(1)==="x"?String.fromCharCode(parseInt(n.substring(2),16)):String.fromCharCode(+n.substring(1))}return""})}function replace(regex,opt){regex=regex.source;opt=opt||"";return function self(name,val){if(!name)return new RegExp(regex,opt);val=val.source||val;val=val.replace(/(^|[^\[])\^/g,"$1");regex=regex.replace(name,val);return self}}function noop(){}noop.exec=noop;function merge(obj){var i=1,target,key;for(;i<arguments.length;i++){target=arguments[i];for(key in target){if(Object.prototype.hasOwnProperty.call(target,key)){obj[key]=target[key]}}}return obj}function marked(src,opt,callback){if(callback||typeof opt==="function"){if(!callback){callback=opt;opt=null}opt=merge({},marked.defaults,opt||{});var highlight=opt.highlight,tokens,pending,i=0;try{tokens=Lexer.lex(src,opt)}catch(e){return callback(e)}pending=tokens.length;var done=function(err){if(err){opt.highlight=highlight;return callback(err)}var out;try{out=Parser.parse(tokens,opt)}catch(e){err=e}opt.highlight=highlight;return err?callback(err):callback(null,out)};if(!highlight||highlight.length<3){return done()}delete opt.highlight;if(!pending)return done();for(;i<tokens.length;i++){(function(token){if(token.type!=="code"){return--pending||done()}return highlight(token.text,token.lang,function(err,code){if(err)return done(err);if(code==null||code===token.text){return--pending||done()}token.text=code;token.escaped=true;--pending||done()})})(tokens[i])}return}try{if(opt)opt=merge({},marked.defaults,opt);return Parser.parse(Lexer.lex(src,opt),opt)}catch(e){e.message+="\nPlease report this to https://github.com/chjj/marked.";if((opt||marked.defaults).silent){return"<p>An error occured:</p><pre>"+escape(e.message+"",true)+"</pre>"}throw e}}marked.options=marked.setOptions=function(opt){merge(marked.defaults,opt);return marked};marked.defaults={gfm:true,tables:true,breaks:false,pedantic:false,sanitize:false,sanitizer:null,mangle:true,smartLists:false,silent:false,highlight:null,langPrefix:"lang-",smartypants:false,headerPrefix:"",renderer:new Renderer,xhtml:false};marked.Parser=Parser;marked.parser=Parser.parse;marked.Renderer=Renderer;marked.Lexer=Lexer;marked.lexer=Lexer.lex;marked.InlineLexer=InlineLexer;marked.inlineLexer=InlineLexer.output;marked.parse=marked;if(typeof module!=="undefined"&&typeof exports==="object"){module.exports=marked}else if(typeof define==="function"&&define.amd){define(function(){return marked})}else{this.marked=marked}}).call(function(){return this||(typeof window!=="undefined"?window:global)}());
+
+		return module.exports;
+	}();
+
+
+	// FORMAT OPTIONS FOR MARKED IMPLEMENTATION
+
+	function formatOptions(options)
+	{
+		function toHighlight(code, lang)
+		{
+			if (!lang && options.defaultHighlighting.ctor === 'Just')
+			{
+				lang = options.defaultHighlighting._0;
+			}
+
+			if (typeof hljs !== 'undefined' && lang && hljs.listLanguages().indexOf(lang) >= 0)
+			{
+				return hljs.highlight(lang, code, true).value;
+			}
+
+			return code;
+		}
+
+		var gfm = options.githubFlavored;
+		if (gfm.ctor === 'Just')
+		{
+			return {
+				highlight: toHighlight,
+				gfm: true,
+				tables: gfm._0.tables,
+				breaks: gfm._0.breaks,
+				sanitize: options.sanitize,
+				smartypants: options.smartypants
+			};
+		}
+
+		return {
+			highlight: toHighlight,
+			gfm: false,
+			tables: false,
+			breaks: false,
+			sanitize: options.sanitize,
+			smartypants: options.smartypants
+		};
+	}
+
+
+	// EXPORTS
+
+	return {
+		toHtml: F3(toHtml)
+	};
+
+	}();
+
+	var _evancz$elm_markdown$Markdown$toHtmlWith = _evancz$elm_markdown$Native_Markdown.toHtml;
+	var _evancz$elm_markdown$Markdown$defaultOptions = {
+		githubFlavored: _elm_lang$core$Maybe$Just(
+			{tables: false, breaks: false}),
+		defaultHighlighting: _elm_lang$core$Maybe$Nothing,
+		sanitize: false,
+		smartypants: false
+	};
+	var _evancz$elm_markdown$Markdown$toHtml = F2(
+		function (attrs, string) {
+			return A3(_evancz$elm_markdown$Native_Markdown.toHtml, _evancz$elm_markdown$Markdown$defaultOptions, attrs, string);
+		});
+	var _evancz$elm_markdown$Markdown$Options = F4(
+		function (a, b, c, d) {
+			return {githubFlavored: a, defaultHighlighting: b, sanitize: c, smartypants: d};
+		});
+
 	var _evancz$url_parser$UrlParser$toKeyValuePair = function (segment) {
 		var _p0 = A2(_elm_lang$core$String$split, '=', segment);
 		if (((_p0.ctor === '::') && (_p0._1.ctor === '::')) && (_p0._1._1.ctor === '[]')) {
@@ -10539,9 +10679,7 @@
 		return A2(_evancz$url_parser$UrlParser$customParam, name, _evancz$url_parser$UrlParser$intParamHelp);
 	};
 
-	var _user$project$Top_Types$Model = function (a) {
-		return {n: a};
-	};
+	var _user$project$Top_Types$Model = {};
 	var _user$project$Top_Types$None = {ctor: 'None'};
 
 	var _user$project$Top_State$update = F2(
@@ -10549,19 +10687,198 @@
 			var _p0 = msg;
 			return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
 		});
-	var _user$project$Top_State$init = _user$project$Top_Types$Model(0);
+	var _user$project$Top_State$init = _user$project$Top_Types$Model;
+
+	var _user$project$Works_Project_Types$Project = F4(
+		function (a, b, c, d) {
+			return {title: a, id: b, imgUrl: c, contents: d};
+		});
+	var _user$project$Works_Project_Types$None = {ctor: 'None'};
+	var _user$project$Works_Project_Types$Video = function (a) {
+		return {ctor: 'Video', _0: a};
+	};
+	var _user$project$Works_Project_Types$Picture = function (a) {
+		return {ctor: 'Picture', _0: a};
+	};
+	var _user$project$Works_Project_Types$Description = function (a) {
+		return {ctor: 'Description', _0: a};
+	};
 
 	var _user$project$Works_Types$Model = function (a) {
-		return {hoge: a};
+		return {projects: a};
 	};
 	var _user$project$Works_Types$None = {ctor: 'None'};
+
+	var _user$project$Works_Contents_OpenAgBrain$initialDescription = '\nopenag_brain is the software stack running on a suite of hardware known as Food Computers. It is being developed at the MIT Media Lab\'s Open Agriculture Initiative.\n\nThe architecture is based on ROS(Robot Operating System) and is able to support flexible hardware configurations.\n\nThe main piece of hardware that openag_brain runs on, the PFC(Personal Food Computer) v2 uses a Raspberry Pi and an Arduino to control the climate inside a small growth chamber. (Render shown above.)\n\nThe parts that I have worked on are mainly the software, but I have also conducted some hardware assembly as well:\n';
+	var _user$project$Works_Contents_OpenAgBrain$content = A4(
+		_user$project$Works_Project_Types$Project,
+		'openag_brain',
+		'openag_brain',
+		'./assets/img/projects/openag_brain/pfc2_render.jpg',
+		{
+			ctor: '::',
+			_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/openag_brain/pfc2_render.jpg'),
+			_1: {
+				ctor: '::',
+				_0: _user$project$Works_Project_Types$Description(_user$project$Works_Contents_OpenAgBrain$initialDescription),
+				_1: {
+					ctor: '::',
+					_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/openag_brain/hardware-asm.png'),
+					_1: {ctor: '[]'}
+				}
+			}
+		});
+
+	var _user$project$Works_Contents_CG$content = A4(
+		_user$project$Works_Project_Types$Project,
+		'3D CG',
+		'3dcg',
+		'assets/img/projects/XR-3DCG/fathers-day.png',
+		{
+			ctor: '::',
+			_0: _user$project$Works_Project_Types$Description('I occasionally write shader code for raymarching in my free time.'),
+			_1: {
+				ctor: '::',
+				_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/XR-3DCG/fathers-day.png'),
+				_1: {
+					ctor: '::',
+					_0: _user$project$Works_Project_Types$Video('./assets/img/projects/XR-3DCG/raymarch.mp4'),
+					_1: {
+						ctor: '::',
+						_0: _user$project$Works_Project_Types$Description('I also tried making some audio reactive real time stuff, I wouldn\'t call it VJ-ing yet.'),
+						_1: {
+							ctor: '::',
+							_0: _user$project$Works_Project_Types$Video('./assets/img/projects/XR-3DCG/midi2.mp4'),
+							_1: {
+								ctor: '::',
+								_0: _user$project$Works_Project_Types$Description('AR, especially Google\'s Project Tango devices and the Hololens are very appealing to me as well.'),
+								_1: {
+									ctor: '::',
+									_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/XR-3DCG/room-cloud.jpg'),
+									_1: {
+										ctor: '::',
+										_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/XR-3DCG/dynamic-meshing.jpg'),
+										_1: {ctor: '[]'}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		});
+
+	var _user$project$Works_Contents_Pong$initialDescription = '\n[Pong.js](https://github.com/Spaghet/pong.js) was one of the first projects that I worked on when I was first learning how to program.\nI watched a video on the internet where someone was programming a space invaders game from scratch using HTML canvas and changed the code to create pong.\n';
+	var _user$project$Works_Contents_Pong$content = A4(
+		_user$project$Works_Project_Types$Project,
+		'Pong.js',
+		'pong',
+		'./assets/img/projects/pong/canvas.png',
+		{
+			ctor: '::',
+			_0: _user$project$Works_Project_Types$Description(_user$project$Works_Contents_Pong$initialDescription),
+			_1: {
+				ctor: '::',
+				_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/pong/canvas.png'),
+				_1: {ctor: '[]'}
+			}
+		});
+
+	var _user$project$Works_Contents_GODEL$content = A4(
+		_user$project$Works_Project_Types$Project,
+		'GODEL',
+		'godel',
+		'./assets/img/projects/GODEL/DTLZ1.png',
+		{ctor: '[]'});
+
+	var _user$project$Works_Contents_Fab$content = A4(
+		_user$project$Works_Project_Types$Project,
+		'Digital Fabrication',
+		'fab',
+		'./assets/img/projects/fab/coaster.jpg',
+		{ctor: '[]'});
+
+	var _user$project$Works_Contents_Aquaponics$content = A4(
+		_user$project$Works_Project_Types$Project,
+		'Aquaponics',
+		'aquaponics',
+		'./assets/img/projects/aquap/cauliflower.jpg',
+		{ctor: '[]'});
+
+	var _user$project$Works_Contents_Main$projects = {
+		ctor: '::',
+		_0: _user$project$Works_Contents_OpenAgBrain$content,
+		_1: {
+			ctor: '::',
+			_0: _user$project$Works_Contents_CG$content,
+			_1: {
+				ctor: '::',
+				_0: _user$project$Works_Contents_GODEL$content,
+				_1: {
+					ctor: '::',
+					_0: _user$project$Works_Contents_Fab$content,
+					_1: {
+						ctor: '::',
+						_0: _user$project$Works_Contents_Aquaponics$content,
+						_1: {
+							ctor: '::',
+							_0: _user$project$Works_Contents_Pong$content,
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			}
+		}
+	};
 
 	var _user$project$Works_State$update = F2(
 		function (msg, model) {
 			var _p0 = msg;
 			return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
 		});
-	var _user$project$Works_State$init = _user$project$Works_Types$Model(0);
+	var _user$project$Works_State$init = _user$project$Works_Types$Model(_user$project$Works_Contents_Main$projects);
+
+	var _user$project$Works_Project_State$update = F2(
+		function (msg, model) {
+			return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+		});
+
+	var _user$project$Common_Helpers$remove = F2(
+		function (x, xs) {
+			var _p0 = xs;
+			if (_p0.ctor === '[]') {
+				return {ctor: '[]'};
+			} else {
+				var _p2 = _p0._1;
+				var _p1 = _p0._0;
+				return _elm_lang$core$Native_Utils.eq(x, _p1) ? _p2 : {
+					ctor: '::',
+					_0: _p1,
+					_1: A2(_user$project$Common_Helpers$remove, x, _p2)
+				};
+			}
+		});
+	var _user$project$Common_Helpers$find = F2(
+		function (pred, list) {
+			find:
+			while (true) {
+				var _p3 = list;
+				if (_p3.ctor === '::') {
+					var _p4 = _p3._0;
+					if (pred(_p4)) {
+						return _elm_lang$core$Maybe$Just(_p4);
+					} else {
+						var _v2 = pred,
+							_v3 = _p3._1;
+						pred = _v2;
+						list = _v3;
+						continue find;
+					}
+				} else {
+					return _elm_lang$core$Maybe$Nothing;
+				}
+			}
+		});
 
 	var _user$project$Types$Model = F3(
 		function (a, b, c) {
@@ -10569,6 +10886,9 @@
 		});
 	var _user$project$Types$OnLocationChange = function (a) {
 		return {ctor: 'OnLocationChange', _0: a};
+	};
+	var _user$project$Types$ProjectMsg = function (a) {
+		return {ctor: 'ProjectMsg', _0: a};
 	};
 	var _user$project$Types$WorksMsg = function (a) {
 		return {ctor: 'WorksMsg', _0: a};
@@ -10647,7 +10967,7 @@
 							{top: topModel}),
 						_1: topCmd
 					};
-				default:
+				case 'WorksMsg':
 					var _p2 = A2(_user$project$Works_State$update, _p0._0, model.works);
 					var worksModel = _p2._0;
 					var worksCmd = _p2._1;
@@ -10658,6 +10978,46 @@
 							{works: worksModel}),
 						_1: worksCmd
 					};
+				default:
+					var _p3 = model.route;
+					if (_p3.ctor === 'Work') {
+						var projectMaybe = A2(
+							_user$project$Common_Helpers$find,
+							function (x) {
+								return _elm_lang$core$Native_Utils.eq(x.id, _p3._0);
+							},
+							model.works.projects);
+						var _p4 = projectMaybe;
+						if (_p4.ctor === 'Just') {
+							var _p6 = _p4._0;
+							var oldWorks = model.works;
+							var _p5 = A2(_user$project$Works_Project_State$update, _p0._0, _p6);
+							var projectModel = _p5._0;
+							var projectCmd = _p5._1;
+							var newProjects = A2(
+								_elm_lang$core$List$append,
+								{
+									ctor: '::',
+									_0: projectModel,
+									_1: {ctor: '[]'}
+								},
+								A2(_user$project$Common_Helpers$remove, _p6, model.works.projects));
+							var newWorks = _elm_lang$core$Native_Utils.update(
+								oldWorks,
+								{projects: newProjects});
+							return {
+								ctor: '_Tuple2',
+								_0: _elm_lang$core$Native_Utils.update(
+									model,
+									{works: newWorks}),
+								_1: projectCmd
+							};
+						} else {
+							return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+						}
+					} else {
+						return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+					}
 			}
 		});
 	var _user$project$State$init = function (location) {
@@ -10669,17 +11029,94 @@
 		};
 	};
 
-	var _user$project$Top_Styling$cosine = F5(
+	var _user$project$Top_Styling$nameStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'grid-template-columns', _1: 'repeat(10, 40px)'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'grid-template-rows', _1: 'repeat(2, 100px)'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'background-color', _1: 'rgba(255,255,255,0.0)'},
+					_1: {ctor: '[]'}
+				}
+			}
+		});
+	var _user$project$Top_Styling$tabsContainerStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'space-around'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'flex-wrap', _1: 'no-wrap'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'height', _1: '50vh'},
+						_1: {ctor: '[]'}
+					}
+				}
+			}
+		});
+	var _user$project$Top_Styling$nameContainerStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'center'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'align-items', _1: 'center'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'flex-wrap', _1: 'no-wrap'},
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'height', _1: '50vh'},
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			}
+		});
+	var _user$project$Top_Styling$topContainerStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'position', _1: 'relative'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'min-height', _1: '100%'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'width', _1: '100%'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'flex-direction', _1: 'column'},
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			}
+		});
+
+	var _user$project$Common_Styling$cosine = F5(
 		function ($int, amp, freq, phase, x) {
 			var rate = ($int - 0.5) + (amp * (_elm_lang$core$Basics$cos(((freq * x) * 6.2831853) + (phase * 6.2831853)) + 1.0));
 			return _elm_lang$core$Basics$round(rate * 255);
 		});
-	var _user$project$Top_Styling$cosineGradient = function (x) {
+	var _user$project$Common_Styling$cosineGradient = function (x) {
 		var _p0 = x;
 		if (((((((((((((((((((((_p0.ctor === '::') && (_p0._0.ctor === '::')) && (_p0._0._1.ctor === '::')) && (_p0._0._1._1.ctor === '::')) && (_p0._0._1._1._1.ctor === '[]')) && (_p0._1.ctor === '::')) && (_p0._1._0.ctor === '::')) && (_p0._1._0._1.ctor === '::')) && (_p0._1._0._1._1.ctor === '::')) && (_p0._1._0._1._1._1.ctor === '[]')) && (_p0._1._1.ctor === '::')) && (_p0._1._1._0.ctor === '::')) && (_p0._1._1._0._1.ctor === '::')) && (_p0._1._1._0._1._1.ctor === '::')) && (_p0._1._1._0._1._1._1.ctor === '[]')) && (_p0._1._1._1.ctor === '::')) && (_p0._1._1._1._0.ctor === '::')) && (_p0._1._1._1._0._1.ctor === '::')) && (_p0._1._1._1._0._1._1.ctor === '::')) && (_p0._1._1._1._0._1._1._1.ctor === '[]')) && (_p0._1._1._1._1.ctor === '[]')) {
-			var b = A4(_user$project$Top_Styling$cosine, _p0._0._1._1._0, _p0._1._0._1._1._0, _p0._1._1._0._1._1._0, _p0._1._1._1._0._1._1._0);
-			var g = A4(_user$project$Top_Styling$cosine, _p0._0._1._0, _p0._1._0._1._0, _p0._1._1._0._1._0, _p0._1._1._1._0._1._0);
-			var r = A4(_user$project$Top_Styling$cosine, _p0._0._0, _p0._1._0._0, _p0._1._1._0._0, _p0._1._1._1._0._0);
+			var b = A4(_user$project$Common_Styling$cosine, _p0._0._1._1._0, _p0._1._0._1._1._0, _p0._1._1._0._1._1._0, _p0._1._1._1._0._1._1._0);
+			var g = A4(_user$project$Common_Styling$cosine, _p0._0._1._0, _p0._1._0._1._0, _p0._1._1._0._1._0, _p0._1._1._1._0._1._0);
+			var r = A4(_user$project$Common_Styling$cosine, _p0._0._0, _p0._1._0._0, _p0._1._1._0._0, _p0._1._1._1._0._0);
 			var segment = F2(
 				function (n, m) {
 					return (_elm_lang$core$Native_Utils.cmp(n, m) < 0) ? A2(
@@ -10734,7 +11171,7 @@
 			return '';
 		}
 	};
-	var _user$project$Top_Styling$radialCosineGradient = F2(
+	var _user$project$Common_Styling$radialCosineGradient = F2(
 		function (waveforms, position) {
 			return _elm_lang$html$Html_Attributes$style(
 				{
@@ -10753,35 +11190,137 @@
 									',',
 									A2(
 										_elm_lang$core$Basics_ops['++'],
-										_user$project$Top_Styling$cosineGradient(waveforms),
+										_user$project$Common_Styling$cosineGradient(waveforms),
 										')'))))
 					},
 					_1: {ctor: '[]'}
 				});
 		});
-
-	var _user$project$Top_View$nameItem = F3(
-		function (id_, class_, content) {
-			return A2(
-				_elm_lang$html$Html$div,
-				{
+	var _user$project$Common_Styling$firstJpStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'grid-column-start', _1: '7'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'grid-column-end', _1: '11'},
+				_1: {
 					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$id(id_),
+					_0: {ctor: '_Tuple2', _0: 'grid-row-start', _1: '2'},
 					_1: {
 						ctor: '::',
-						_0: _elm_lang$html$Html_Attributes$class(class_),
+						_0: {ctor: '_Tuple2', _0: 'grid-row-end', _1: '3'},
+						_1: {ctor: '[]'}
+					}
+				}
+			}
+		});
+	var _user$project$Common_Styling$lastJpStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'grid-column-start', _1: '5'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'grid-column-end', _1: '11'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'grid-row-start', _1: '1'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'grid-row-end', _1: '1'},
 						_1: {
 							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$class('name'),
+							_0: {ctor: '_Tuple2', _0: 'border-bottom', _1: '1px dashed #FFF'},
 							_1: {ctor: '[]'}
 						}
 					}
-				},
+				}
+			}
+		});
+	var _user$project$Common_Styling$lastEnStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'grid-column-start', _1: '1'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'grid-column-end', _1: '7'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'grid-row-start', _1: '2'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'grid-row-end', _1: '3'},
+						_1: {ctor: '[]'}
+					}
+				}
+			}
+		});
+	var _user$project$Common_Styling$firstEnStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'grid-column-start', _1: '1'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'grid-column-end', _1: '5'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'grid-row-start', _1: '1'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'grid-row-end', _1: '1'},
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'border-bottom', _1: '1px dashed #FFF'},
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			}
+		});
+	var _user$project$Common_Styling$tabGrid = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'grid-template-columns', _1: 'repeat(4, 100px)'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'grid-template-rows', _1: 'repeat(2, 100px)'},
+				_1: {ctor: '[]'}
+			}
+		});
+
+	var _user$project$Common_ViewComponents$nameItem = F2(
+		function (attrs, content) {
+			return A2(
+				_elm_lang$html$Html$div,
+				A2(
+					_elm_lang$core$List$append,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('name'),
+						_1: {ctor: '[]'}
+					},
+					attrs),
 				{
 					ctor: '::',
 					_0: A2(
-						_elm_lang$html$Html$p,
-						{ctor: '[]'},
+						_elm_lang$html$Html$h1,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$style(
+								{
+									ctor: '::',
+									_0: {ctor: '_Tuple2', _0: 'line-height', _1: '100px'},
+									_1: {
+										ctor: '::',
+										_0: {ctor: '_Tuple2', _0: 'font-size', _1: '36pt'},
+										_1: {
+											ctor: '::',
+											_0: {ctor: '_Tuple2', _0: 'margin', _1: 'auto'},
+											_1: {ctor: '[]'}
+										}
+									}
+								}),
+							_1: {ctor: '[]'}
+						},
 						{
 							ctor: '::',
 							_0: _elm_lang$html$Html$text(content),
@@ -10790,31 +11329,223 @@
 					_1: {ctor: '[]'}
 				});
 		});
-	var _user$project$Top_View$name = A2(
-		_elm_lang$html$Html$div,
+	var _user$project$Common_ViewComponents$nameBase = function (attrs) {
+		return A2(
+			_elm_lang$html$Html$a,
+			A2(
+				_elm_lang$core$List$append,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$href('#'),
+					_1: {
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('name'),
+						_1: {ctor: '[]'}
+					}
+				},
+				attrs),
+			{
+				ctor: '::',
+				_0: A2(
+					_user$project$Common_ViewComponents$nameItem,
+					{
+						ctor: '::',
+						_0: _user$project$Common_Styling$firstEnStyle,
+						_1: {
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$id('first-en'),
+							_1: {
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('name-en'),
+								_1: {ctor: '[]'}
+							}
+						}
+					},
+					'Rikuo'),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_user$project$Common_ViewComponents$nameItem,
+						{
+							ctor: '::',
+							_0: _user$project$Common_Styling$lastEnStyle,
+							_1: {
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$id('last-en'),
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$class('name-en'),
+									_1: {ctor: '[]'}
+								}
+							}
+						},
+						'Hasegawa'),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_user$project$Common_ViewComponents$nameItem,
+							{
+								ctor: '::',
+								_0: _user$project$Common_Styling$lastJpStyle,
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$id('last-jp'),
+									_1: {
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('name-jp'),
+										_1: {ctor: '[]'}
+									}
+								}
+							},
+							'長谷川'),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_user$project$Common_ViewComponents$nameItem,
+								{
+									ctor: '::',
+									_0: _user$project$Common_Styling$firstJpStyle,
+									_1: {
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$id('first-jp'),
+										_1: {
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$class('name-jp'),
+											_1: {ctor: '[]'}
+										}
+									}
+								},
+								'陸央'),
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			});
+	};
+	var _user$project$Common_ViewComponents$tab = F5(
+		function (attrs, imgUrl, href_, englishText, japaneseText) {
+			return A2(
+				_elm_lang$html$Html$a,
+				A2(
+					_elm_lang$core$List$append,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$href(href_),
+						_1: {
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$class('tab'),
+							_1: {
+								ctor: '::',
+								_0: _user$project$Common_Styling$tabGrid,
+								_1: {ctor: '[]'}
+							}
+						}
+					},
+					attrs),
+				{
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$img,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$src(imgUrl),
+							_1: {
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$alt(imgUrl),
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$class('tab-logo'),
+									_1: {ctor: '[]'}
+								}
+							}
+						},
+						{ctor: '[]'}),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$h1,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('tab-en'),
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$class('tab-text'),
+									_1: {ctor: '[]'}
+								}
+							},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text(englishText),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$h1,
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$class('tab-jp'),
+									_1: {
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('tab-text'),
+										_1: {ctor: '[]'}
+									}
+								},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text(japaneseText),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}
+					}
+				});
+		});
+
+	var _user$project$Top_View$about = A5(
+		_user$project$Common_ViewComponents$tab,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$id('about'),
+			_1: {ctor: '[]'}
+		},
+		'assets/img/icons/about.png',
+		'#about',
+		'About Me',
+		'自己紹介');
+	var _user$project$Top_View$blog = A5(
+		_user$project$Common_ViewComponents$tab,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$id('blog'),
+			_1: {ctor: '[]'}
+		},
+		'assets/img/icons/blog.png',
+		'https://goonytoons.com/blog',
+		'Blog',
+		'ブログ');
+	var _user$project$Top_View$works = A5(
+		_user$project$Common_ViewComponents$tab,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$id('works'),
+			_1: {ctor: '[]'}
+		},
+		'assets/img/icons/works.png',
+		'#works',
+		'Works',
+		'作品');
+	var _user$project$Top_View$name = _user$project$Common_ViewComponents$nameBase(
 		{
 			ctor: '::',
 			_0: _elm_lang$html$Html_Attributes$id('name'),
 			_1: {
 				ctor: '::',
-				_0: _elm_lang$html$Html_Attributes$class('container'),
-				_1: {ctor: '[]'}
-			}
-		},
-		{
-			ctor: '::',
-			_0: A3(_user$project$Top_View$nameItem, 'first-en', 'name-en', 'Rikuo'),
-			_1: {
-				ctor: '::',
-				_0: A3(_user$project$Top_View$nameItem, 'last-en', 'name-en', 'Hasegawa'),
+				_0: _elm_lang$html$Html_Attributes$class('tab'),
 				_1: {
 					ctor: '::',
-					_0: A3(_user$project$Top_View$nameItem, 'last-jp', 'name-jp', '長谷川'),
-					_1: {
-						ctor: '::',
-						_0: A3(_user$project$Top_View$nameItem, 'first-jp', 'name-jp', '陸央'),
-						_1: {ctor: '[]'}
-					}
+					_0: _user$project$Top_Styling$nameStyle,
+					_1: {ctor: '[]'}
 				}
 			}
 		});
@@ -10883,93 +11614,6 @@
 			}
 		}
 	};
-	var _user$project$Top_View$container = F5(
-		function (id_, imgUrl, href_, englishText, japaneseText) {
-			return A2(
-				_elm_lang$html$Html$div,
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$id(id_),
-					_1: {
-						ctor: '::',
-						_0: _elm_lang$html$Html_Attributes$class('container'),
-						_1: {
-							ctor: '::',
-							_0: A2(_user$project$Top_Styling$radialCosineGradient, _user$project$Top_View$waveform, 'bottom right'),
-							_1: {ctor: '[]'}
-						}
-					}
-				},
-				{
-					ctor: '::',
-					_0: A2(
-						_elm_lang$html$Html$img,
-						{
-							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$src(imgUrl),
-							_1: {
-								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$alt(id_),
-								_1: {
-									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$class('tab-logo'),
-									_1: {ctor: '[]'}
-								}
-							}
-						},
-						{ctor: '[]'}),
-					_1: {
-						ctor: '::',
-						_0: A2(
-							_elm_lang$html$Html$a,
-							{
-								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$href(href_),
-								_1: {
-									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$class('tab-en'),
-									_1: {
-										ctor: '::',
-										_0: _elm_lang$html$Html_Attributes$class('tab-text'),
-										_1: {ctor: '[]'}
-									}
-								}
-							},
-							{
-								ctor: '::',
-								_0: _elm_lang$html$Html$text(englishText),
-								_1: {ctor: '[]'}
-							}),
-						_1: {
-							ctor: '::',
-							_0: A2(
-								_elm_lang$html$Html$a,
-								{
-									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$href(href_),
-									_1: {
-										ctor: '::',
-										_0: _elm_lang$html$Html_Attributes$class('tab-jp'),
-										_1: {
-											ctor: '::',
-											_0: _elm_lang$html$Html_Attributes$class('tab-text'),
-											_1: {ctor: '[]'}
-										}
-									}
-								},
-								{
-									ctor: '::',
-									_0: _elm_lang$html$Html$text(japaneseText),
-									_1: {ctor: '[]'}
-								}),
-							_1: {ctor: '[]'}
-						}
-					}
-				});
-		});
-	var _user$project$Top_View$works = A5(_user$project$Top_View$container, 'works', 'assets/img/works.png', '#works', 'Works', '作品');
-	var _user$project$Top_View$blog = A5(_user$project$Top_View$container, 'blog', 'assets/img/blog.png', 'https://goonytoons.com/blog', 'Blog', 'ブログ');
-	var _user$project$Top_View$about = A5(_user$project$Top_View$container, 'about', 'assets/img/about.png', '#about', 'About Me', '自己紹介');
 	var _user$project$Top_View$root = function (model) {
 		return A2(
 			_elm_lang$html$Html$div,
@@ -10978,37 +11622,735 @@
 				_0: _elm_lang$html$Html_Attributes$id('top'),
 				_1: {
 					ctor: '::',
-					_0: A2(_user$project$Top_Styling$radialCosineGradient, _user$project$Top_View$waveform, 'top left'),
-					_1: {ctor: '[]'}
+					_0: _user$project$Top_Styling$topContainerStyle,
+					_1: {
+						ctor: '::',
+						_0: A2(_user$project$Common_Styling$radialCosineGradient, _user$project$Top_View$waveform, 'top left'),
+						_1: {ctor: '[]'}
+					}
 				}
 			},
 			{
 				ctor: '::',
-				_0: _user$project$Top_View$name,
+				_0: A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _user$project$Top_Styling$nameContainerStyle,
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _user$project$Top_View$name,
+						_1: {ctor: '[]'}
+					}),
 				_1: {
 					ctor: '::',
-					_0: _user$project$Top_View$works,
-					_1: {
-						ctor: '::',
-						_0: _user$project$Top_View$blog,
-						_1: {
+					_0: A2(
+						_elm_lang$html$Html$div,
+						{
 							ctor: '::',
-							_0: _user$project$Top_View$about,
+							_0: _user$project$Top_Styling$tabsContainerStyle,
 							_1: {ctor: '[]'}
-						}
-					}
+						},
+						{
+							ctor: '::',
+							_0: _user$project$Top_View$works,
+							_1: {
+								ctor: '::',
+								_0: _user$project$Top_View$blog,
+								_1: {
+									ctor: '::',
+									_0: _user$project$Top_View$about,
+									_1: {ctor: '[]'}
+								}
+							}
+						}),
+					_1: {ctor: '[]'}
 				}
 			});
 	};
 
+	var _user$project$Works_Styling$workTextWrapperStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'flex-direction', _1: 'column'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'center'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'align-content', _1: 'center'},
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'height', _1: '100%'},
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'width', _1: '100%'},
+								_1: {
+									ctor: '::',
+									_0: {ctor: '_Tuple2', _0: 'margin', _1: '0'},
+									_1: {ctor: '[]'}
+								}
+							}
+						}
+					}
+				}
+			}
+		});
+	var _user$project$Works_Styling$workStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'background-color', _1: '#FFF'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'min-width', _1: '600px'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'min-height', _1: '600px'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'margin', _1: '1px'},
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'background-size', _1: 'cover'},
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'background-repeat', _1: 'no-repeat'},
+								_1: {
+									ctor: '::',
+									_0: {ctor: '_Tuple2', _0: 'background-position', _1: '50% 50%'},
+									_1: {ctor: '[]'}
+								}
+							}
+						}
+					}
+				}
+			}
+		});
+	var _user$project$Works_Styling$tabsContainerStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'flex-end'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'flex-wrap', _1: 'no-wrap'},
+					_1: {ctor: '[]'}
+				}
+			}
+		});
+	var _user$project$Works_Styling$nameContainerStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'flex-start'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'flex-wrap', _1: 'no-wrap'},
+					_1: {ctor: '[]'}
+				}
+			}
+		});
+	var _user$project$Works_Styling$navBarStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'width', _1: '100%'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'height', _1: '200px'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'margin', _1: 'auto'},
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'space-between'},
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'flex-direction', _1: 'row'},
+								_1: {ctor: '[]'}
+							}
+						}
+					}
+				}
+			}
+		});
+	var _user$project$Works_Styling$worksListStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'position', _1: 'relative'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'background-color', _1: 'rgba(255, 255, 255, 0.3)'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'width', _1: '100%'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'height', _1: 'auto'},
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'flex-wrap', _1: 'wrap'},
+								_1: {
+									ctor: '::',
+									_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'center'},
+									_1: {ctor: '[]'}
+								}
+							}
+						}
+					}
+				}
+			}
+		});
+	var _user$project$Works_Styling$worksContainerStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'position', _1: 'relative'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'min-height', _1: '100%'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'width', _1: '100%'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'flex-direction', _1: 'column'},
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			}
+		});
+
+	var _user$project$Works_View$about = A5(
+		_user$project$Common_ViewComponents$tab,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$id('about'),
+			_1: {ctor: '[]'}
+		},
+		'assets/img/icons/about.png',
+		'#about',
+		'About Me',
+		'自己紹介');
+	var _user$project$Works_View$blog = A5(
+		_user$project$Common_ViewComponents$tab,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$id('blog'),
+			_1: {ctor: '[]'}
+		},
+		'assets/img/icons/blog.png',
+		'https://goonytoons.com/blog',
+		'Blog',
+		'ブログ');
+	var _user$project$Works_View$works = A5(
+		_user$project$Common_ViewComponents$tab,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$id('works'),
+			_1: {
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$class('selected'),
+				_1: {ctor: '[]'}
+			}
+		},
+		'assets/img/icons/works.png',
+		'#works',
+		'Works',
+		'作品');
+	var _user$project$Works_View$name = _user$project$Common_ViewComponents$nameBase(
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$id('name'),
+			_1: {
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$class('tab'),
+				_1: {ctor: '[]'}
+			}
+		});
+	var _user$project$Works_View$navBar = A2(
+		_elm_lang$html$Html$nav,
+		{
+			ctor: '::',
+			_0: _user$project$Works_Styling$navBarStyle,
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$div,
+				{
+					ctor: '::',
+					_0: _user$project$Works_Styling$nameContainerStyle,
+					_1: {ctor: '[]'}
+				},
+				{
+					ctor: '::',
+					_0: _user$project$Works_View$name,
+					_1: {ctor: '[]'}
+				}),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _user$project$Works_Styling$tabsContainerStyle,
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _user$project$Works_View$works,
+						_1: {
+							ctor: '::',
+							_0: _user$project$Works_View$blog,
+							_1: {
+								ctor: '::',
+								_0: _user$project$Works_View$about,
+								_1: {ctor: '[]'}
+							}
+						}
+					}),
+				_1: {ctor: '[]'}
+			}
+		});
+	var _user$project$Works_View$contents = function (projects) {
+		var work = function (project) {
+			return A2(
+				_elm_lang$html$Html$div,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$class('work'),
+					_1: {
+						ctor: '::',
+						_0: _user$project$Works_Styling$workStyle,
+						_1: {
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$style(
+								{
+									ctor: '::',
+									_0: {
+										ctor: '_Tuple2',
+										_0: 'background-image',
+										_1: A2(
+											_elm_lang$core$Basics_ops['++'],
+											'url(',
+											A2(_elm_lang$core$Basics_ops['++'], project.imgUrl, ')'))
+									},
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}
+					}
+				},
+				{
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$a,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$href(
+								A2(_elm_lang$core$Basics_ops['++'], '#works/', project.id)),
+							_1: {
+								ctor: '::',
+								_0: _user$project$Works_Styling$workTextWrapperStyle,
+								_1: {ctor: '[]'}
+							}
+						},
+						{
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$p,
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$style(
+										{
+											ctor: '::',
+											_0: {ctor: '_Tuple2', _0: 'text-align', _1: 'center'},
+											_1: {ctor: '[]'}
+										}),
+									_1: {ctor: '[]'}
+								},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text(project.title),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
+				});
+		};
+		return A2(
+			_elm_lang$html$Html$div,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$id('works-list'),
+				_1: {
+					ctor: '::',
+					_0: _user$project$Works_Styling$worksListStyle,
+					_1: {ctor: '[]'}
+				}
+			},
+			A2(_elm_lang$core$List$map, work, projects));
+	};
+	var _user$project$Works_View$waveform = {
+		ctor: '::',
+		_0: {
+			ctor: '::',
+			_0: 0.748,
+			_1: {
+				ctor: '::',
+				_0: 0.718,
+				_1: {
+					ctor: '::',
+					_0: 0.5,
+					_1: {ctor: '[]'}
+				}
+			}
+		},
+		_1: {
+			ctor: '::',
+			_0: {
+				ctor: '::',
+				_0: 0.5,
+				_1: {
+					ctor: '::',
+					_0: 0.798,
+					_1: {
+						ctor: '::',
+						_0: 0.368,
+						_1: {ctor: '[]'}
+					}
+				}
+			},
+			_1: {
+				ctor: '::',
+				_0: {
+					ctor: '::',
+					_0: 0.828,
+					_1: {
+						ctor: '::',
+						_0: 1.038,
+						_1: {
+							ctor: '::',
+							_0: -0.452,
+							_1: {ctor: '[]'}
+						}
+					}
+				},
+				_1: {
+					ctor: '::',
+					_0: {
+						ctor: '::',
+						_0: 1.468,
+						_1: {
+							ctor: '::',
+							_0: -0.132,
+							_1: {
+								ctor: '::',
+								_0: -0.882,
+								_1: {ctor: '[]'}
+							}
+						}
+					},
+					_1: {ctor: '[]'}
+				}
+			}
+		}
+	};
 	var _user$project$Works_View$root = function (model) {
 		return A2(
 			_elm_lang$html$Html$div,
-			{ctor: '[]'},
 			{
 				ctor: '::',
-				_0: _elm_lang$html$Html$text('Projects'),
+				_0: _elm_lang$html$Html_Attributes$id('works-container'),
+				_1: {
+					ctor: '::',
+					_0: _user$project$Works_Styling$worksContainerStyle,
+					_1: {
+						ctor: '::',
+						_0: A2(_user$project$Common_Styling$radialCosineGradient, _user$project$Works_View$waveform, 'top left'),
+						_1: {ctor: '[]'}
+					}
+				}
+			},
+			{
+				ctor: '::',
+				_0: _user$project$Works_View$navBar,
+				_1: {
+					ctor: '::',
+					_0: _user$project$Works_View$contents(model.projects),
+					_1: {ctor: '[]'}
+				}
+			});
+	};
+
+	var _user$project$Works_Project_Styling$videoContentStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'width', _1: '100%'},
+			_1: {ctor: '[]'}
+		});
+	var _user$project$Works_Project_Styling$imageContentStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'width', _1: '100%'},
+			_1: {ctor: '[]'}
+		});
+	var _user$project$Works_Project_Styling$contentsContainerStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'position', _1: 'relative'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'background-color', _1: 'rgba(255,255,255,0.3)'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'flex-direction', _1: 'column'},
+						_1: {ctor: '[]'}
+					}
+				}
+			}
+		});
+	var _user$project$Works_Project_Styling$contentWidth = '80';
+	var _user$project$Works_Project_Styling$contentWrapperStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {
+				ctor: '_Tuple2',
+				_0: 'width',
+				_1: A2(_elm_lang$core$Basics_ops['++'], _user$project$Works_Project_Styling$contentWidth, '%')
+			},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'margin-left', _1: '10%'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'margin-right', _1: '10%'},
+					_1: {ctor: '[]'}
+				}
+			}
+		});
+
+	var _user$project$Works_Project_View$render = function (content) {
+		var rendered = function () {
+			var _p0 = content;
+			switch (_p0.ctor) {
+				case 'Description':
+					return A2(
+						_evancz$elm_markdown$Markdown$toHtml,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$class('project-description'),
+							_1: {ctor: '[]'}
+						},
+						_p0._0);
+				case 'Picture':
+					return A2(
+						_elm_lang$html$Html$img,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$class('project-picture'),
+							_1: {
+								ctor: '::',
+								_0: _user$project$Works_Project_Styling$imageContentStyle,
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$src(_p0._0),
+									_1: {ctor: '[]'}
+								}
+							}
+						},
+						{ctor: '[]'});
+				default:
+					return A2(
+						_elm_lang$html$Html$video,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$autoplay(true),
+							_1: {
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$loop(true),
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$controls(true),
+									_1: {
+										ctor: '::',
+										_0: _user$project$Works_Project_Styling$videoContentStyle,
+										_1: {ctor: '[]'}
+									}
+								}
+							}
+						},
+						{
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$source,
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$src(_p0._0),
+									_1: {
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$type_('video/mp4'),
+										_1: {ctor: '[]'}
+									}
+								},
+								{ctor: '[]'}),
+							_1: {
+								ctor: '::',
+								_0: _elm_lang$html$Html$text('No video support'),
+								_1: {ctor: '[]'}
+							}
+						});
+			}
+		}();
+		return A2(
+			_elm_lang$html$Html$div,
+			{
+				ctor: '::',
+				_0: _user$project$Works_Project_Styling$contentWrapperStyle,
 				_1: {ctor: '[]'}
+			},
+			{
+				ctor: '::',
+				_0: rendered,
+				_1: {ctor: '[]'}
+			});
+	};
+	var _user$project$Works_Project_View$waveform = {
+		ctor: '::',
+		_0: {
+			ctor: '::',
+			_0: 0.748,
+			_1: {
+				ctor: '::',
+				_0: 0.718,
+				_1: {
+					ctor: '::',
+					_0: 0.5,
+					_1: {ctor: '[]'}
+				}
+			}
+		},
+		_1: {
+			ctor: '::',
+			_0: {
+				ctor: '::',
+				_0: 0.5,
+				_1: {
+					ctor: '::',
+					_0: 0.798,
+					_1: {
+						ctor: '::',
+						_0: 0.368,
+						_1: {ctor: '[]'}
+					}
+				}
+			},
+			_1: {
+				ctor: '::',
+				_0: {
+					ctor: '::',
+					_0: 0.828,
+					_1: {
+						ctor: '::',
+						_0: 1.038,
+						_1: {
+							ctor: '::',
+							_0: -0.452,
+							_1: {ctor: '[]'}
+						}
+					}
+				},
+				_1: {
+					ctor: '::',
+					_0: {
+						ctor: '::',
+						_0: 1.468,
+						_1: {
+							ctor: '::',
+							_0: -0.132,
+							_1: {
+								ctor: '::',
+								_0: -0.882,
+								_1: {ctor: '[]'}
+							}
+						}
+					},
+					_1: {ctor: '[]'}
+				}
+			}
+		}
+	};
+	var _user$project$Works_Project_View$root = function (model) {
+		return A2(
+			_elm_lang$html$Html$div,
+			{
+				ctor: '::',
+				_0: A2(_user$project$Common_Styling$radialCosineGradient, _user$project$Works_Project_View$waveform, 'top left'),
+				_1: {ctor: '[]'}
+			},
+			{
+				ctor: '::',
+				_0: _user$project$Works_View$navBar,
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$div,
+						{
+							ctor: '::',
+							_0: _user$project$Works_Project_Styling$contentsContainerStyle,
+							_1: {ctor: '[]'}
+						},
+						A2(
+							_elm_lang$core$List$append,
+							{
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$div,
+									{
+										ctor: '::',
+										_0: _user$project$Works_Project_Styling$contentWrapperStyle,
+										_1: {ctor: '[]'}
+									},
+									{
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$h1,
+											{ctor: '[]'},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text(model.title),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							},
+							A2(_elm_lang$core$List$map, _user$project$Works_Project_View$render, model.contents))),
+					_1: {ctor: '[]'}
+				}
 			});
 	};
 
@@ -11025,6 +12367,29 @@
 					_elm_lang$html$Html$map,
 					_user$project$Types$WorksMsg,
 					_user$project$Works_View$root(model.works));
+			case 'Work':
+				var project = A2(
+					_user$project$Common_Helpers$find,
+					function (x) {
+						return _elm_lang$core$Native_Utils.eq(x.id, _p0._0);
+					},
+					model.works.projects);
+				var _p1 = project;
+				if (_p1.ctor === 'Just') {
+					return A2(
+						_elm_lang$html$Html$map,
+						_user$project$Types$ProjectMsg,
+						_user$project$Works_Project_View$root(_p1._0));
+				} else {
+					return A2(
+						_elm_lang$html$Html$div,
+						{ctor: '[]'},
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text('No such project.'),
+							_1: {ctor: '[]'}
+						});
+				}
 			case 'NotFoundRoute':
 				return A2(
 					_elm_lang$html$Html$div,
