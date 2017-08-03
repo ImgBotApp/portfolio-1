@@ -110,7 +110,7 @@
 
 
 	// module
-	exports.push([module.id, "@font-face {\n    font-family: koz;\n    font-style: normal;\n    font-weight: 400;\n    src: url(" + __webpack_require__(6) + ");\n}\n\nbody {\n  min-width: 1600px;\n  min-height: 900px;\n  max-width: 2560px;\n  max-height: 1440px;\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  background-color: #000;\n}\n\np, h1, h2, h3, h4, h5, h6, a{\n  font-family: koz, Helvetica, sans-serif;\n}\n\n#main{\n  position: absolute;\n  width: 100%;\n  min-height: 100%;\n}\n\na {\n  color: #FFF;\n  text-decoration: none;\n}\n\n.selected {\n  background-color: rgba(255,255,255,0.3);\n}\n\n.tab {\n  font-family: koz, Helvetica, sans-serif;\n  width: 400px;\n  height: 200px;\n  display: grid;\n}\n\n.tab:hover {\n  background-color: rgba(255,255,255,0.3);\n}\n\n.tab-logo {\n  display: block;\n  grid-column-start: 1;\n  grid-column-end: 3;\n  grid-row-start: 1;\n  grid-row-end: 3;\n  width: 100%;\n  height: auto;\n}\n\n.tab-text{\n  height: 100%;\n  width: 100%;\n  text-align: center;\n  line-height: 100px;\n  margin: auto;\n  font-size: 28pt;\n}\n\n.tab-en{\n  grid-column-start: 3;\n  grid-column-end: 5;\n  grid-row-start: 1;\n  grid-row-end: 2;\n}\n\n.tab-jp{\n  grid-column-start: 3;\n  grid-column-end: 5;\n  grid-row-start: 2;\n  grid-row-end: 3;\n}\n\n.name-en{\n  text-align: left;\n  border-right: 1px dashed #FFF;\n  color: #FFF;\n}\n\n.name-jp{\n  text-align: right;\n  color: #FFF;\n}\n\n.work a:hover {\n  background-color: rgba(255,255,255,0.3);\n  transition: background-color 0.15s ease-in;\n}\n", ""]);
+	exports.push([module.id, "@font-face {\n    font-family: koz;\n    font-style: normal;\n    font-weight: 400;\n    src: url(" + __webpack_require__(6) + ");\n}\n\nbody {\n  min-width: 1600px;\n  min-height: 900px;\n  max-width: 2560px;\n  max-height: 1440px;\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  background-color: #000;\n}\n\np, h1, h2, h3, h4, h5, h6, a, li{\n  font-family: koz, Helvetica, sans-serif;\n}\n\n#main{\n  position: absolute;\n  width: 100%;\n  min-height: 100%;\n}\n\na {\n  color: #FFF;\n  text-decoration: none;\n}\n\n.selected {\n  background-color: rgba(255,255,255,0.3);\n}\n\n.tab {\n  font-family: koz, Helvetica, sans-serif;\n  width: 400px;\n  height: 200px;\n  display: grid;\n}\n\n.tab:hover {\n  background-color: rgba(255,255,255,0.3);\n}\n\n.tab-logo {\n  display: block;\n  grid-column-start: 1;\n  grid-column-end: 3;\n  grid-row-start: 1;\n  grid-row-end: 3;\n  width: 100%;\n  height: auto;\n}\n\n.tab-text{\n  height: 100%;\n  width: 100%;\n  text-align: center;\n  line-height: 100px;\n  margin: auto;\n  font-size: 28pt;\n}\n\n.tab-en{\n  grid-column-start: 3;\n  grid-column-end: 5;\n  grid-row-start: 1;\n  grid-row-end: 2;\n}\n\n.tab-jp{\n  grid-column-start: 3;\n  grid-column-end: 5;\n  grid-row-start: 2;\n  grid-row-end: 3;\n}\n\n.name-en{\n  text-align: left;\n  border-right: 1px dashed #FFF;\n  color: #FFF;\n}\n\n.name-jp{\n  text-align: right;\n  color: #FFF;\n}\n\n.work a:hover {\n  background-color: rgba(255,255,255,0.3);\n  transition: background-color 0.15s ease-in;\n}\n", ""]);
 
 	// exports
 
@@ -9410,121 +9410,6 @@
 	};
 	var _elm_lang$html$Html_Attributes$style = _elm_lang$virtual_dom$VirtualDom$style;
 
-	var _elm_lang$html$Html_Events$keyCode = A2(_elm_lang$core$Json_Decode$field, 'keyCode', _elm_lang$core$Json_Decode$int);
-	var _elm_lang$html$Html_Events$targetChecked = A2(
-		_elm_lang$core$Json_Decode$at,
-		{
-			ctor: '::',
-			_0: 'target',
-			_1: {
-				ctor: '::',
-				_0: 'checked',
-				_1: {ctor: '[]'}
-			}
-		},
-		_elm_lang$core$Json_Decode$bool);
-	var _elm_lang$html$Html_Events$targetValue = A2(
-		_elm_lang$core$Json_Decode$at,
-		{
-			ctor: '::',
-			_0: 'target',
-			_1: {
-				ctor: '::',
-				_0: 'value',
-				_1: {ctor: '[]'}
-			}
-		},
-		_elm_lang$core$Json_Decode$string);
-	var _elm_lang$html$Html_Events$defaultOptions = _elm_lang$virtual_dom$VirtualDom$defaultOptions;
-	var _elm_lang$html$Html_Events$onWithOptions = _elm_lang$virtual_dom$VirtualDom$onWithOptions;
-	var _elm_lang$html$Html_Events$on = _elm_lang$virtual_dom$VirtualDom$on;
-	var _elm_lang$html$Html_Events$onFocus = function (msg) {
-		return A2(
-			_elm_lang$html$Html_Events$on,
-			'focus',
-			_elm_lang$core$Json_Decode$succeed(msg));
-	};
-	var _elm_lang$html$Html_Events$onBlur = function (msg) {
-		return A2(
-			_elm_lang$html$Html_Events$on,
-			'blur',
-			_elm_lang$core$Json_Decode$succeed(msg));
-	};
-	var _elm_lang$html$Html_Events$onSubmitOptions = _elm_lang$core$Native_Utils.update(
-		_elm_lang$html$Html_Events$defaultOptions,
-		{preventDefault: true});
-	var _elm_lang$html$Html_Events$onSubmit = function (msg) {
-		return A3(
-			_elm_lang$html$Html_Events$onWithOptions,
-			'submit',
-			_elm_lang$html$Html_Events$onSubmitOptions,
-			_elm_lang$core$Json_Decode$succeed(msg));
-	};
-	var _elm_lang$html$Html_Events$onCheck = function (tagger) {
-		return A2(
-			_elm_lang$html$Html_Events$on,
-			'change',
-			A2(_elm_lang$core$Json_Decode$map, tagger, _elm_lang$html$Html_Events$targetChecked));
-	};
-	var _elm_lang$html$Html_Events$onInput = function (tagger) {
-		return A2(
-			_elm_lang$html$Html_Events$on,
-			'input',
-			A2(_elm_lang$core$Json_Decode$map, tagger, _elm_lang$html$Html_Events$targetValue));
-	};
-	var _elm_lang$html$Html_Events$onMouseOut = function (msg) {
-		return A2(
-			_elm_lang$html$Html_Events$on,
-			'mouseout',
-			_elm_lang$core$Json_Decode$succeed(msg));
-	};
-	var _elm_lang$html$Html_Events$onMouseOver = function (msg) {
-		return A2(
-			_elm_lang$html$Html_Events$on,
-			'mouseover',
-			_elm_lang$core$Json_Decode$succeed(msg));
-	};
-	var _elm_lang$html$Html_Events$onMouseLeave = function (msg) {
-		return A2(
-			_elm_lang$html$Html_Events$on,
-			'mouseleave',
-			_elm_lang$core$Json_Decode$succeed(msg));
-	};
-	var _elm_lang$html$Html_Events$onMouseEnter = function (msg) {
-		return A2(
-			_elm_lang$html$Html_Events$on,
-			'mouseenter',
-			_elm_lang$core$Json_Decode$succeed(msg));
-	};
-	var _elm_lang$html$Html_Events$onMouseUp = function (msg) {
-		return A2(
-			_elm_lang$html$Html_Events$on,
-			'mouseup',
-			_elm_lang$core$Json_Decode$succeed(msg));
-	};
-	var _elm_lang$html$Html_Events$onMouseDown = function (msg) {
-		return A2(
-			_elm_lang$html$Html_Events$on,
-			'mousedown',
-			_elm_lang$core$Json_Decode$succeed(msg));
-	};
-	var _elm_lang$html$Html_Events$onDoubleClick = function (msg) {
-		return A2(
-			_elm_lang$html$Html_Events$on,
-			'dblclick',
-			_elm_lang$core$Json_Decode$succeed(msg));
-	};
-	var _elm_lang$html$Html_Events$onClick = function (msg) {
-		return A2(
-			_elm_lang$html$Html_Events$on,
-			'click',
-			_elm_lang$core$Json_Decode$succeed(msg));
-	};
-	var _elm_lang$html$Html_Events$Options = F2(
-		function (a, b) {
-			return {stopPropagation: a, preventDefault: b};
-		});
-
 	var _elm_lang$http$Native_Http = function() {
 
 
@@ -10679,411 +10564,90 @@
 		return A2(_evancz$url_parser$UrlParser$customParam, name, _evancz$url_parser$UrlParser$intParamHelp);
 	};
 
-	var _user$project$Top_Types$Model = {};
-	var _user$project$Top_Types$None = {ctor: 'None'};
+	var _user$project$About_Types$Model = function (a) {
+		return {description: a};
+	};
+	var _user$project$About_Types$None = {ctor: 'None'};
 
-	var _user$project$Top_State$update = F2(
-		function (msg, model) {
-			var _p0 = msg;
+	var _user$project$About_State$update = F2(
+		function (message, model) {
 			return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
 		});
-	var _user$project$Top_State$init = _user$project$Top_Types$Model;
+	var _user$project$About_State$init = _user$project$About_Types$Model('\n# Rikuo Hasegawa // 長谷川陸央 // ﾊｾｶﾞﾜ ﾘｸｵ\n\n----\n\nHi. I\'m still trying to find my place in the world, but I\'m currently an engineer.\n\nOften being told I think like a craftsman; my lifelong dream is to create something great that I can feel happy with, and die happily.\n\n----\n\n## Interests and Skills\n\n- AR // 3DCG // Generative Systems // Complex Emergent Systems // Functional Programming // Reactive Programming // Aquaponics // Control Environment Agriculture\n\n----\n\n## Education and Residencies\n\n- [04/2013 ~ 03/2016] Tokyo Metropolitan Kokusai High School\n\n----\n\n## Career Summary\n\n- [10/2016 ~ current] MIT Media Lab // Open Agriculture Initiative // Projects Assistant\n- [04/2016 ~ current] Mogura Inc. // Mogura VR // Writer & VR Developer\n- [08/2015 ~ 04/2016] Colopl Inc. // VR Development Team // VR Developer\n- [02/2015 ~ 06/2015] Team IcARus // Software Developer (Mainly VR)\n- [02/2014 ~ 04/2014] Candle Inc. // Moode // Software Developer\n\n----\n\n## Awards and Grants\n\n- 07/2017 Member // Masayoshi Son Foundation\n- 04/2016 Best Prize // Yomiuri Giants Hackathon\n- 08/2015 Yahoo Japan Fund Prize // Innovator\'s Summer Hackathon\n- 08/2015 Softbank Prize // Innovator\'s Summer Hackathon\n- 06/2015 Member // Tech Lab Paak (Under Recruit Ltd.)\n- 04/2015 Best Prize // BizJapan VRHMD Hackathon\n\n----\n\n## Talks, Exhibits, and Interviews\n\n- 01/2016 [talk] _U18 僕らの未来 ～伊藤穰一と中高生の白熱トークライブ～_ // NHK (TV)\n- 01/2016 [interview] _現役学生プログラマーが力を入れる、循環型のエコシステム\"アクアポニックス\"_ // sensors.jp\n  - http://www.sensors.jp/post/demoday_7.html\n- 12/2015 [talk] _ボクとレタスの話_ // DemoDay.Tokyo#0\n- 05/2015 [interview] _【西川善司】視線追跡機能付きVR HMDからAI搭載ミニ四駆まで。独創的な技術を持つベンチャー企業が集まる「Slush Asia」を見てきた_ // 4gamer.net\n  - http://www.4gamer.net/games/999/G999902/20150521013/\n- 04/2015 [exhibit] _Drone Space Defense, Team IcARus_ // SLUSH Asia\n- 10/2014 [interview] _CODE1000メンター田中洋喜×谷脇大輔が語る「プログラミングが上達するコツ」_ // CodeIQ\n  - https://codeiq.jp/magazine/2014/10/17138/\n');
 
-	var _user$project$Works_Project_Types$Project = F4(
-		function (a, b, c, d) {
-			return {title: a, id: b, imgUrl: c, contents: d};
-		});
-	var _user$project$Works_Project_Types$None = {ctor: 'None'};
-	var _user$project$Works_Project_Types$Video = function (a) {
-		return {ctor: 'Video', _0: a};
-	};
-	var _user$project$Works_Project_Types$Picture = function (a) {
-		return {ctor: 'Picture', _0: a};
-	};
-	var _user$project$Works_Project_Types$Description = function (a) {
-		return {ctor: 'Description', _0: a};
-	};
-
-	var _user$project$Works_Types$Model = function (a) {
-		return {projects: a};
-	};
-	var _user$project$Works_Types$None = {ctor: 'None'};
-
-	var _user$project$Works_Contents_OpenAgBrain$initialDescription = '\nopenag_brain is the software stack running on a suite of hardware known as Food Computers. It is being developed at the MIT Media Lab\'s Open Agriculture Initiative.\n\nThe architecture is based on ROS(Robot Operating System) and is able to support flexible hardware configurations.\n\nThe main piece of hardware that openag_brain runs on, the PFC(Personal Food Computer) v2 uses a Raspberry Pi and an Arduino to control the climate inside a small growth chamber. (Render shown above.)\n\nThe parts that I have worked on are mainly the software, but I have also conducted some hardware assembly as well:\n';
-	var _user$project$Works_Contents_OpenAgBrain$content = A4(
-		_user$project$Works_Project_Types$Project,
-		'openag_brain',
-		'openag_brain',
-		'./assets/img/projects/openag_brain/pfc2_render.jpg',
+	var _user$project$About_Styling$tabsContainerStyle = _elm_lang$html$Html_Attributes$style(
 		{
 			ctor: '::',
-			_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/openag_brain/pfc2_render.jpg'),
+			_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
 			_1: {
 				ctor: '::',
-				_0: _user$project$Works_Project_Types$Description(_user$project$Works_Contents_OpenAgBrain$initialDescription),
+				_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'flex-end'},
 				_1: {
 					ctor: '::',
-					_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/openag_brain/hardware-asm.png'),
+					_0: {ctor: '_Tuple2', _0: 'flex-wrap', _1: 'no-wrap'},
 					_1: {ctor: '[]'}
 				}
 			}
 		});
-
-	var _user$project$Works_Contents_CG$content = A4(
-		_user$project$Works_Project_Types$Project,
-		'3D CG',
-		'3dcg',
-		'assets/img/projects/XR-3DCG/fathers-day.png',
+	var _user$project$About_Styling$nameContainerStyle = _elm_lang$html$Html_Attributes$style(
 		{
 			ctor: '::',
-			_0: _user$project$Works_Project_Types$Description('I occasionally write shader code for raymarching in my free time.'),
+			_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
 			_1: {
 				ctor: '::',
-				_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/XR-3DCG/fathers-day.png'),
+				_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'flex-start'},
 				_1: {
 					ctor: '::',
-					_0: _user$project$Works_Project_Types$Video('./assets/img/projects/XR-3DCG/raymarch.mp4'),
+					_0: {ctor: '_Tuple2', _0: 'flex-wrap', _1: 'no-wrap'},
+					_1: {ctor: '[]'}
+				}
+			}
+		});
+	var _user$project$About_Styling$navBarStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'width', _1: '100%'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'height', _1: '200px'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
 					_1: {
 						ctor: '::',
-						_0: _user$project$Works_Project_Types$Description('I also tried making some audio reactive real time stuff, I wouldn\'t call it VJ-ing yet.'),
+						_0: {ctor: '_Tuple2', _0: 'margin', _1: 'auto'},
 						_1: {
 							ctor: '::',
-							_0: _user$project$Works_Project_Types$Video('./assets/img/projects/XR-3DCG/midi2.mp4'),
+							_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'space-between'},
 							_1: {
 								ctor: '::',
-								_0: _user$project$Works_Project_Types$Description('AR, especially Google\'s Project Tango devices and the Hololens are very appealing to me as well.'),
-								_1: {
-									ctor: '::',
-									_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/XR-3DCG/room-cloud.jpg'),
-									_1: {
-										ctor: '::',
-										_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/XR-3DCG/dynamic-meshing.jpg'),
-										_1: {ctor: '[]'}
-									}
-								}
+								_0: {ctor: '_Tuple2', _0: 'flex-direction', _1: 'row'},
+								_1: {ctor: '[]'}
 							}
 						}
 					}
 				}
 			}
 		});
-
-	var _user$project$Works_Contents_Pong$initialDescription = '\n[Pong.js](https://github.com/Spaghet/pong.js) was one of the first projects that I worked on when I was first learning how to program.\nI watched a video on the internet where someone was programming a space invaders game from scratch using HTML canvas and changed the code to create pong.\n';
-	var _user$project$Works_Contents_Pong$content = A4(
-		_user$project$Works_Project_Types$Project,
-		'Pong.js',
-		'pong',
-		'./assets/img/projects/pong/canvas.png',
+	var _user$project$About_Styling$aboutContentsStyle = _elm_lang$html$Html_Attributes$style(
 		{
 			ctor: '::',
-			_0: _user$project$Works_Project_Types$Description(_user$project$Works_Contents_Pong$initialDescription),
+			_0: {ctor: '_Tuple2', _0: 'min-height', _1: 'calc(100vh - 200px)'},
 			_1: {
 				ctor: '::',
-				_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/pong/canvas.png'),
-				_1: {ctor: '[]'}
-			}
-		});
-
-	var _user$project$Works_Contents_GODEL$content = A4(
-		_user$project$Works_Project_Types$Project,
-		'GODEL',
-		'godel',
-		'./assets/img/projects/GODEL/DTLZ1.png',
-		{ctor: '[]'});
-
-	var _user$project$Works_Contents_Fab$content = A4(
-		_user$project$Works_Project_Types$Project,
-		'Digital Fabrication',
-		'fab',
-		'./assets/img/projects/fab/coaster.jpg',
-		{ctor: '[]'});
-
-	var _user$project$Works_Contents_Aquaponics$content = A4(
-		_user$project$Works_Project_Types$Project,
-		'Aquaponics',
-		'aquaponics',
-		'./assets/img/projects/aquap/cauliflower.jpg',
-		{ctor: '[]'});
-
-	var _user$project$Works_Contents_Main$projects = {
-		ctor: '::',
-		_0: _user$project$Works_Contents_OpenAgBrain$content,
-		_1: {
-			ctor: '::',
-			_0: _user$project$Works_Contents_CG$content,
-			_1: {
-				ctor: '::',
-				_0: _user$project$Works_Contents_GODEL$content,
+				_0: {ctor: '_Tuple2', _0: 'width', _1: '80%'},
 				_1: {
 					ctor: '::',
-					_0: _user$project$Works_Contents_Fab$content,
+					_0: {ctor: '_Tuple2', _0: 'margin-left', _1: '10%'},
 					_1: {
 						ctor: '::',
-						_0: _user$project$Works_Contents_Aquaponics$content,
-						_1: {
-							ctor: '::',
-							_0: _user$project$Works_Contents_Pong$content,
-							_1: {ctor: '[]'}
-						}
-					}
-				}
-			}
-		}
-	};
-
-	var _user$project$Works_State$update = F2(
-		function (msg, model) {
-			var _p0 = msg;
-			return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
-		});
-	var _user$project$Works_State$init = _user$project$Works_Types$Model(_user$project$Works_Contents_Main$projects);
-
-	var _user$project$Works_Project_State$update = F2(
-		function (msg, model) {
-			return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
-		});
-
-	var _user$project$Common_Helpers$remove = F2(
-		function (x, xs) {
-			var _p0 = xs;
-			if (_p0.ctor === '[]') {
-				return {ctor: '[]'};
-			} else {
-				var _p2 = _p0._1;
-				var _p1 = _p0._0;
-				return _elm_lang$core$Native_Utils.eq(x, _p1) ? _p2 : {
-					ctor: '::',
-					_0: _p1,
-					_1: A2(_user$project$Common_Helpers$remove, x, _p2)
-				};
-			}
-		});
-	var _user$project$Common_Helpers$find = F2(
-		function (pred, list) {
-			find:
-			while (true) {
-				var _p3 = list;
-				if (_p3.ctor === '::') {
-					var _p4 = _p3._0;
-					if (pred(_p4)) {
-						return _elm_lang$core$Maybe$Just(_p4);
-					} else {
-						var _v2 = pred,
-							_v3 = _p3._1;
-						pred = _v2;
-						list = _v3;
-						continue find;
-					}
-				} else {
-					return _elm_lang$core$Maybe$Nothing;
-				}
-			}
-		});
-
-	var _user$project$Types$Model = F3(
-		function (a, b, c) {
-			return {top: a, works: b, route: c};
-		});
-	var _user$project$Types$OnLocationChange = function (a) {
-		return {ctor: 'OnLocationChange', _0: a};
-	};
-	var _user$project$Types$ProjectMsg = function (a) {
-		return {ctor: 'ProjectMsg', _0: a};
-	};
-	var _user$project$Types$WorksMsg = function (a) {
-		return {ctor: 'WorksMsg', _0: a};
-	};
-	var _user$project$Types$TopMsg = function (a) {
-		return {ctor: 'TopMsg', _0: a};
-	};
-	var _user$project$Types$NotFoundRoute = {ctor: 'NotFoundRoute'};
-	var _user$project$Types$About = {ctor: 'About'};
-	var _user$project$Types$Work = function (a) {
-		return {ctor: 'Work', _0: a};
-	};
-	var _user$project$Types$Works = {ctor: 'Works'};
-	var _user$project$Types$Top = {ctor: 'Top'};
-
-	var _user$project$Routing$matchers = _evancz$url_parser$UrlParser$oneOf(
-		{
-			ctor: '::',
-			_0: A2(_evancz$url_parser$UrlParser$map, _user$project$Types$Top, _evancz$url_parser$UrlParser$top),
-			_1: {
-				ctor: '::',
-				_0: A2(
-					_evancz$url_parser$UrlParser$map,
-					_user$project$Types$Works,
-					_evancz$url_parser$UrlParser$s('works')),
-				_1: {
-					ctor: '::',
-					_0: A2(
-						_evancz$url_parser$UrlParser$map,
-						_user$project$Types$Work,
-						A2(
-							_evancz$url_parser$UrlParser_ops['</>'],
-							_evancz$url_parser$UrlParser$s('works'),
-							_evancz$url_parser$UrlParser$string)),
-					_1: {
-						ctor: '::',
-						_0: A2(
-							_evancz$url_parser$UrlParser$map,
-							_user$project$Types$About,
-							_evancz$url_parser$UrlParser$s('about')),
+						_0: {ctor: '_Tuple2', _0: 'margin-right', _1: '10%'},
 						_1: {ctor: '[]'}
 					}
 				}
 			}
 		});
-	var _user$project$Routing$parseLocation = function (location) {
-		var _p0 = A2(_evancz$url_parser$UrlParser$parseHash, _user$project$Routing$matchers, location);
-		if (_p0.ctor === 'Just') {
-			return _p0._0;
-		} else {
-			return _user$project$Types$NotFoundRoute;
-		}
-	};
-
-	var _user$project$State$update = F2(
-		function (msg, model) {
-			var _p0 = msg;
-			switch (_p0.ctor) {
-				case 'OnLocationChange':
-					var newRoute = _user$project$Routing$parseLocation(_p0._0);
-					return {
-						ctor: '_Tuple2',
-						_0: _elm_lang$core$Native_Utils.update(
-							model,
-							{route: newRoute}),
-						_1: _elm_lang$core$Platform_Cmd$none
-					};
-				case 'TopMsg':
-					var _p1 = A2(_user$project$Top_State$update, _p0._0, model.top);
-					var topModel = _p1._0;
-					var topCmd = _p1._1;
-					return {
-						ctor: '_Tuple2',
-						_0: _elm_lang$core$Native_Utils.update(
-							model,
-							{top: topModel}),
-						_1: topCmd
-					};
-				case 'WorksMsg':
-					var _p2 = A2(_user$project$Works_State$update, _p0._0, model.works);
-					var worksModel = _p2._0;
-					var worksCmd = _p2._1;
-					return {
-						ctor: '_Tuple2',
-						_0: _elm_lang$core$Native_Utils.update(
-							model,
-							{works: worksModel}),
-						_1: worksCmd
-					};
-				default:
-					var _p3 = model.route;
-					if (_p3.ctor === 'Work') {
-						var projectMaybe = A2(
-							_user$project$Common_Helpers$find,
-							function (x) {
-								return _elm_lang$core$Native_Utils.eq(x.id, _p3._0);
-							},
-							model.works.projects);
-						var _p4 = projectMaybe;
-						if (_p4.ctor === 'Just') {
-							var _p6 = _p4._0;
-							var oldWorks = model.works;
-							var _p5 = A2(_user$project$Works_Project_State$update, _p0._0, _p6);
-							var projectModel = _p5._0;
-							var projectCmd = _p5._1;
-							var newProjects = A2(
-								_elm_lang$core$List$append,
-								{
-									ctor: '::',
-									_0: projectModel,
-									_1: {ctor: '[]'}
-								},
-								A2(_user$project$Common_Helpers$remove, _p6, model.works.projects));
-							var newWorks = _elm_lang$core$Native_Utils.update(
-								oldWorks,
-								{projects: newProjects});
-							return {
-								ctor: '_Tuple2',
-								_0: _elm_lang$core$Native_Utils.update(
-									model,
-									{works: newWorks}),
-								_1: projectCmd
-							};
-						} else {
-							return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
-						}
-					} else {
-						return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
-					}
-			}
-		});
-	var _user$project$State$init = function (location) {
-		var route = _user$project$Routing$parseLocation(location);
-		return {
-			ctor: '_Tuple2',
-			_0: A3(_user$project$Types$Model, _user$project$Top_State$init, _user$project$Works_State$init, route),
-			_1: _elm_lang$core$Platform_Cmd$none
-		};
-	};
-
-	var _user$project$Top_Styling$nameStyle = _elm_lang$html$Html_Attributes$style(
-		{
-			ctor: '::',
-			_0: {ctor: '_Tuple2', _0: 'grid-template-columns', _1: 'repeat(10, 40px)'},
-			_1: {
-				ctor: '::',
-				_0: {ctor: '_Tuple2', _0: 'grid-template-rows', _1: 'repeat(2, 100px)'},
-				_1: {
-					ctor: '::',
-					_0: {ctor: '_Tuple2', _0: 'background-color', _1: 'rgba(255,255,255,0.0)'},
-					_1: {ctor: '[]'}
-				}
-			}
-		});
-	var _user$project$Top_Styling$tabsContainerStyle = _elm_lang$html$Html_Attributes$style(
-		{
-			ctor: '::',
-			_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
-			_1: {
-				ctor: '::',
-				_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'space-around'},
-				_1: {
-					ctor: '::',
-					_0: {ctor: '_Tuple2', _0: 'flex-wrap', _1: 'no-wrap'},
-					_1: {
-						ctor: '::',
-						_0: {ctor: '_Tuple2', _0: 'height', _1: '50vh'},
-						_1: {ctor: '[]'}
-					}
-				}
-			}
-		});
-	var _user$project$Top_Styling$nameContainerStyle = _elm_lang$html$Html_Attributes$style(
-		{
-			ctor: '::',
-			_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
-			_1: {
-				ctor: '::',
-				_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'center'},
-				_1: {
-					ctor: '::',
-					_0: {ctor: '_Tuple2', _0: 'align-items', _1: 'center'},
-					_1: {
-						ctor: '::',
-						_0: {ctor: '_Tuple2', _0: 'flex-wrap', _1: 'no-wrap'},
-						_1: {
-							ctor: '::',
-							_0: {ctor: '_Tuple2', _0: 'height', _1: '50vh'},
-							_1: {ctor: '[]'}
-						}
-					}
-				}
-			}
-		});
-	var _user$project$Top_Styling$topContainerStyle = _elm_lang$html$Html_Attributes$style(
+	var _user$project$About_Styling$aboutContainerStyle = _elm_lang$html$Html_Attributes$style(
 		{
 			ctor: '::',
 			_0: {ctor: '_Tuple2', _0: 'position', _1: 'relative'},
@@ -11500,6 +11064,737 @@
 						}
 					}
 				});
+		});
+
+	var _user$project$About_View$about = A5(
+		_user$project$Common_ViewComponents$tab,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$id('about'),
+			_1: {
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$class('selected'),
+				_1: {ctor: '[]'}
+			}
+		},
+		'assets/img/icons/about.png',
+		'#about',
+		'About Me',
+		'自己紹介');
+	var _user$project$About_View$blog = A5(
+		_user$project$Common_ViewComponents$tab,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$id('blog'),
+			_1: {ctor: '[]'}
+		},
+		'assets/img/icons/blog.png',
+		'https://goonytoons.com/blog',
+		'Blog',
+		'ブログ');
+	var _user$project$About_View$works = A5(
+		_user$project$Common_ViewComponents$tab,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$id('works'),
+			_1: {ctor: '[]'}
+		},
+		'assets/img/icons/works.png',
+		'#works',
+		'Works',
+		'作品');
+	var _user$project$About_View$name = _user$project$Common_ViewComponents$nameBase(
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$id('name'),
+			_1: {
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$class('tab'),
+				_1: {ctor: '[]'}
+			}
+		});
+	var _user$project$About_View$navBar = A2(
+		_elm_lang$html$Html$nav,
+		{
+			ctor: '::',
+			_0: _user$project$About_Styling$navBarStyle,
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$div,
+				{
+					ctor: '::',
+					_0: _user$project$About_Styling$nameContainerStyle,
+					_1: {ctor: '[]'}
+				},
+				{
+					ctor: '::',
+					_0: _user$project$About_View$name,
+					_1: {ctor: '[]'}
+				}),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _user$project$About_Styling$tabsContainerStyle,
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _user$project$About_View$works,
+						_1: {
+							ctor: '::',
+							_0: _user$project$About_View$blog,
+							_1: {
+								ctor: '::',
+								_0: _user$project$About_View$about,
+								_1: {ctor: '[]'}
+							}
+						}
+					}),
+				_1: {ctor: '[]'}
+			}
+		});
+	var _user$project$About_View$contents = function (model) {
+		return A2(
+			_elm_lang$html$Html$div,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$id('about-me-contents'),
+				_1: {
+					ctor: '::',
+					_0: _user$project$About_Styling$aboutContentsStyle,
+					_1: {ctor: '[]'}
+				}
+			},
+			{
+				ctor: '::',
+				_0: A2(
+					_evancz$elm_markdown$Markdown$toHtml,
+					{ctor: '[]'},
+					model.description),
+				_1: {ctor: '[]'}
+			});
+	};
+	var _user$project$About_View$waveform = {
+		ctor: '::',
+		_0: {
+			ctor: '::',
+			_0: 0.748,
+			_1: {
+				ctor: '::',
+				_0: 0.718,
+				_1: {
+					ctor: '::',
+					_0: 0.5,
+					_1: {ctor: '[]'}
+				}
+			}
+		},
+		_1: {
+			ctor: '::',
+			_0: {
+				ctor: '::',
+				_0: 0.5,
+				_1: {
+					ctor: '::',
+					_0: 0.798,
+					_1: {
+						ctor: '::',
+						_0: 0.368,
+						_1: {ctor: '[]'}
+					}
+				}
+			},
+			_1: {
+				ctor: '::',
+				_0: {
+					ctor: '::',
+					_0: 0.828,
+					_1: {
+						ctor: '::',
+						_0: 1.038,
+						_1: {
+							ctor: '::',
+							_0: -0.452,
+							_1: {ctor: '[]'}
+						}
+					}
+				},
+				_1: {
+					ctor: '::',
+					_0: {
+						ctor: '::',
+						_0: 1.468,
+						_1: {
+							ctor: '::',
+							_0: -0.132,
+							_1: {
+								ctor: '::',
+								_0: -0.882,
+								_1: {ctor: '[]'}
+							}
+						}
+					},
+					_1: {ctor: '[]'}
+				}
+			}
+		}
+	};
+	var _user$project$About_View$root = function (model) {
+		return A2(
+			_elm_lang$html$Html$div,
+			{
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$id('about-container'),
+				_1: {
+					ctor: '::',
+					_0: _user$project$About_Styling$aboutContainerStyle,
+					_1: {
+						ctor: '::',
+						_0: A2(_user$project$Common_Styling$radialCosineGradient, _user$project$About_View$waveform, 'top left'),
+						_1: {ctor: '[]'}
+					}
+				}
+			},
+			{
+				ctor: '::',
+				_0: _user$project$About_View$navBar,
+				_1: {
+					ctor: '::',
+					_0: _user$project$About_View$contents(model),
+					_1: {ctor: '[]'}
+				}
+			});
+	};
+
+	var _user$project$Top_Types$Model = {};
+	var _user$project$Top_Types$None = {ctor: 'None'};
+
+	var _user$project$Top_State$update = F2(
+		function (msg, model) {
+			var _p0 = msg;
+			return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+		});
+	var _user$project$Top_State$init = _user$project$Top_Types$Model;
+
+	var _user$project$Works_Project_Types$Project = F4(
+		function (a, b, c, d) {
+			return {title: a, id: b, imgUrl: c, contents: d};
+		});
+	var _user$project$Works_Project_Types$None = {ctor: 'None'};
+	var _user$project$Works_Project_Types$Video = function (a) {
+		return {ctor: 'Video', _0: a};
+	};
+	var _user$project$Works_Project_Types$Picture = function (a) {
+		return {ctor: 'Picture', _0: a};
+	};
+	var _user$project$Works_Project_Types$Description = function (a) {
+		return {ctor: 'Description', _0: a};
+	};
+
+	var _user$project$Works_Types$Model = function (a) {
+		return {projects: a};
+	};
+	var _user$project$Works_Types$None = {ctor: 'None'};
+
+	var _user$project$Works_Contents_OpenAgBrain$fermentaBotDescription = '\nThe openag_brain software stack has also been used on other food computers, like the [fermentabot](https://github.com/openaginitiative/fermentabot)\n\nThe fermentabot has been deployed in the [Basque Culinary Center](http://www.bculinary.com/es/home).\n';
+	var _user$project$Works_Contents_OpenAgBrain$initialDescription = '\n[openag_brain](https://github.com/OpenAgInitiative/openag_brain) is the software stack running on a suite of hardware known as food computers. It is being developed at the [MIT Media Lab\'s Open Agriculture Initiative](https://www.media.mit.edu/groups/open-agriculture-openag/overview/).\n\nThe architecture is based on ROS(Robot Operating System) and is able to support flexible hardware configurations.\n\nThe main piece of hardware that openag_brain runs on, the PFC(Personal Food Computer) v2 uses a Raspberry Pi and an Arduino to control the climate inside a small growth chamber. (Render shown above.)\n\nThe parts that I have worked on are mainly the software, but I have also conducted some hardware assembly as well:\n';
+	var _user$project$Works_Contents_OpenAgBrain$content = A4(
+		_user$project$Works_Project_Types$Project,
+		'openag_brain',
+		'openag_brain',
+		'./assets/img/projects/openag_brain/pfc2_render.jpg',
+		{
+			ctor: '::',
+			_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/openag_brain/pfc2_render.jpg'),
+			_1: {
+				ctor: '::',
+				_0: _user$project$Works_Project_Types$Description(_user$project$Works_Contents_OpenAgBrain$initialDescription),
+				_1: {
+					ctor: '::',
+					_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/openag_brain/hardware-asm.png'),
+					_1: {
+						ctor: '::',
+						_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/openag_brain/ui.jpg'),
+						_1: {
+							ctor: '::',
+							_0: _user$project$Works_Project_Types$Description(_user$project$Works_Contents_OpenAgBrain$fermentaBotDescription),
+							_1: {
+								ctor: '::',
+								_0: _user$project$Works_Project_Types$Picture('https://raw.githubusercontent.com/OpenAgInitiative/fermentabot/master/IMG_1137.jpg'),
+								_1: {ctor: '[]'}
+							}
+						}
+					}
+				}
+			}
+		});
+
+	var _user$project$Works_Contents_CG$content = A4(
+		_user$project$Works_Project_Types$Project,
+		'3D CG',
+		'3dcg',
+		'assets/img/projects/XR-3DCG/fathers-day.png',
+		{
+			ctor: '::',
+			_0: _user$project$Works_Project_Types$Description('I occasionally write shader code for raymarching in my free time. The code is on Github at [https://github.com/Spaghet/raymarch](https://github.com/Spaghet/raymarch)'),
+			_1: {
+				ctor: '::',
+				_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/XR-3DCG/fathers-day.png'),
+				_1: {
+					ctor: '::',
+					_0: _user$project$Works_Project_Types$Description('This is a 3 dimensional Sierpinski triangle fractal rendered in Unity via raymarching'),
+					_1: {
+						ctor: '::',
+						_0: _user$project$Works_Project_Types$Video('./assets/img/projects/XR-3DCG/raymarch.mp4'),
+						_1: {
+							ctor: '::',
+							_0: _user$project$Works_Project_Types$Description('This is also another object rendered using raymarching which is animated.'),
+							_1: {
+								ctor: '::',
+								_0: _user$project$Works_Project_Types$Description('I also tried making some audio reactive real time stuff using the OP-1 synth from Teenage Engineering; I wouldn\'t call it VJ-ing yet.'),
+								_1: {
+									ctor: '::',
+									_0: _user$project$Works_Project_Types$Video('./assets/img/projects/XR-3DCG/midi2.mp4'),
+									_1: {
+										ctor: '::',
+										_0: _user$project$Works_Project_Types$Description('AR, especially Google\'s Project Tango devices and the Hololens are very appealing to me as well.'),
+										_1: {
+											ctor: '::',
+											_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/XR-3DCG/room-cloud.jpg'),
+											_1: {
+												ctor: '::',
+												_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/XR-3DCG/dynamic-meshing.jpg'),
+												_1: {ctor: '[]'}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		});
+
+	var _user$project$Works_Contents_Pong$initialDescription = '\n[Pong.js](https://github.com/Spaghet/pong.js) was one of the first projects that I worked on when I was first learning how to program.\nI watched [a video](https://vimeo.com/105955605) on the internet where someone was programming a space invaders game from scratch using HTML canvas and changed the code to create pong.\n';
+	var _user$project$Works_Contents_Pong$content = A4(
+		_user$project$Works_Project_Types$Project,
+		'Pong.js',
+		'pong',
+		'./assets/img/projects/pong/canvas.png',
+		{
+			ctor: '::',
+			_0: _user$project$Works_Project_Types$Description(_user$project$Works_Contents_Pong$initialDescription),
+			_1: {
+				ctor: '::',
+				_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/pong/canvas.png'),
+				_1: {ctor: '[]'}
+			}
+		});
+
+	var _user$project$Works_Contents_GODEL$systemDescription = '\nThe core of the system is a [Multi-Objective Optimization algorithm](https://en.wikipedia.org/wiki/Multi-objective_optimization) which explores the pareto-optimal front of a hardware design model.\nA Pareto Front is a line in a multi-dimensional hyperplane which defines the most optimal points for a specific problem.\nWhen the user selects their desired tradeoffs, the algorithm selects the nearest neighbor in the pareto front.\n\nThe components were scraped from popular hardware component e-commerce sites like Digikey and Mouser.\nThe UI is based on a Javascript framework called [reflex](https://github.com/mozilla/reflex). It is \"inspired by\" [elm](http://elm-lang.org/) which is the language used to code this site.\n';
+	var _user$project$Works_Contents_GODEL$initialDescription = '\nGODEL(Generative Optimal Design Engine Language) is a hardware design optimization toolkit.\n\nThe general idea behind the tooling is that hardware design is a series of tradeoffs. By creating a tool which indicates those tradeoffs to the designer in a simple way, we can create a hardware design toolkit for the consumer to decide which tradeoffs they want to make.\n\nThe concept is applied generally, but in this work we implemented a component selection tool for the heating module in a Personal Food Computer.\n';
+	var _user$project$Works_Contents_GODEL$content = A4(
+		_user$project$Works_Project_Types$Project,
+		'GODEL',
+		'godel',
+		'./assets/img/projects/GODEL/DTLZ1.png',
+		{
+			ctor: '::',
+			_0: _user$project$Works_Project_Types$Description(_user$project$Works_Contents_GODEL$initialDescription),
+			_1: {
+				ctor: '::',
+				_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/GODEL/frontend.png'),
+				_1: {
+					ctor: '::',
+					_0: _user$project$Works_Project_Types$Description(_user$project$Works_Contents_GODEL$systemDescription),
+					_1: {
+						ctor: '::',
+						_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/GODEL/architecture.png'),
+						_1: {
+							ctor: '::',
+							_0: _user$project$Works_Project_Types$Description('For more details see the [writeup](./assets/img/projects/GODEL/spring-2017-poster.pdf)'),
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			}
+		});
+
+	var _user$project$Works_Contents_Fab$initialDescription = '\nI have been interested in Digital Fabrication ever since I visited Fab Lab Kamakura in high school.\n\nThe ability to bring computational structures into the material world while maintaining the freedom provided in digital worlds is amazing and exciting.\n\nOn a more currently practical note, being able to make customized items for daily use is very nice :)\n';
+	var _user$project$Works_Contents_Fab$content = A4(
+		_user$project$Works_Project_Types$Project,
+		'Digital Fabrication',
+		'fab',
+		'./assets/img/projects/fab/coaster.jpg',
+		{
+			ctor: '::',
+			_0: _user$project$Works_Project_Types$Description(_user$project$Works_Contents_Fab$initialDescription),
+			_1: {
+				ctor: '::',
+				_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/fab/fab.png'),
+				_1: {ctor: '[]'}
+			}
+		});
+
+	var _user$project$Works_Contents_Aquaponics$hsDetailDescription = '\nThe new system had several changes to the previous one:\n\n1. Artificial lighting\n1. Use of Hydroton(expanded clay pebble) medium\n1. Removal of syphon system for timed pump system\n1. Automated fish feeding\n1. Sensing\n\nThis solved some of the problems given above and provided some quality of life improvements:\n\n  - ~~The syphon malfunctioning~~\n  - ~~Not enough light due to the balcony walls being too high~~\n  - Mother kept harvesting whimsically, killing some plants.\n\nUnfortunately, I could not \"fix\" my mother.\n\nThe system won the Softbank Prize and Yahoo Japan! Prize at the Innovator\'s Summer Hackathon.\n\nI did a writeup on the system [here](./assets/pdf/2015.pdf) (Japanese)\n';
+	var _user$project$Works_Contents_Aquaponics$highschoolDescription = '\n----\nIn high school, I did some surveying of aquaponics technology for a research project in school.\n\nThe research received an excellence award within the school even though it was just a light survey.\n\nIt can be found [here](./assets/pdf/2014.pdf) (English)\n\nIn the second research project at school, I made the next iteration of an aquaponics system with some friends which used an Intel Edison to sense and control some parts of the system.\n';
+	var _user$project$Works_Contents_Aquaponics$middleschoolDescription = '\nIt involved a simple pump with a syphon to pump the waste water from goldfish going into a Media Filled Growbed(MFG) with gravel medium.\nThe system worked sufficiently well, and was able to grow some fruits and vegetables.\n\nThe main problems with this system were:\n  - The syphon malfunctioning\n  - Not enough light due to the balcony walls being too high\n  - Mother kept harvesting whimsically, killing some plants.\n';
+	var _user$project$Works_Contents_Aquaponics$initialDescription = '\n>Aquaponics (/ˈækwəˈpɒnᵻks/) refers to any system that combines conventional aquaculture (raising aquatic animals such as snails, fish, crayfish or prawns in tanks) with hydroponics (cultivating plants in water) in a symbiotic environment.\n--- Wikipedia\n\nThe first Aquaponics system I built was in middle school in Kakegawa, Japan. It was very basic and didn\'t involve any complicated control systems.\n';
+	var _user$project$Works_Contents_Aquaponics$content = A4(
+		_user$project$Works_Project_Types$Project,
+		'Aquaponics',
+		'aquaponics',
+		'./assets/img/projects/aquap/cauliflower.jpg',
+		{
+			ctor: '::',
+			_0: _user$project$Works_Project_Types$Description(_user$project$Works_Contents_Aquaponics$initialDescription),
+			_1: {
+				ctor: '::',
+				_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/aquap/first.png'),
+				_1: {
+					ctor: '::',
+					_0: _user$project$Works_Project_Types$Description(_user$project$Works_Contents_Aquaponics$middleschoolDescription),
+					_1: {
+						ctor: '::',
+						_0: _user$project$Works_Project_Types$Description(_user$project$Works_Contents_Aquaponics$highschoolDescription),
+						_1: {
+							ctor: '::',
+							_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/aquap/whole.jpg'),
+							_1: {
+								ctor: '::',
+								_0: _user$project$Works_Project_Types$Description(_user$project$Works_Contents_Aquaponics$hsDetailDescription),
+								_1: {
+									ctor: '::',
+									_0: _user$project$Works_Project_Types$Picture('./assets/img/projects/aquap/prizes.jpg'),
+									_1: {ctor: '[]'}
+								}
+							}
+						}
+					}
+				}
+			}
+		});
+
+	var _user$project$Works_Contents_Main$projects = {
+		ctor: '::',
+		_0: _user$project$Works_Contents_OpenAgBrain$content,
+		_1: {
+			ctor: '::',
+			_0: _user$project$Works_Contents_CG$content,
+			_1: {
+				ctor: '::',
+				_0: _user$project$Works_Contents_GODEL$content,
+				_1: {
+					ctor: '::',
+					_0: _user$project$Works_Contents_Aquaponics$content,
+					_1: {
+						ctor: '::',
+						_0: _user$project$Works_Contents_Fab$content,
+						_1: {
+							ctor: '::',
+							_0: _user$project$Works_Contents_Pong$content,
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			}
+		}
+	};
+
+	var _user$project$Works_State$update = F2(
+		function (msg, model) {
+			var _p0 = msg;
+			return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+		});
+	var _user$project$Works_State$init = _user$project$Works_Types$Model(_user$project$Works_Contents_Main$projects);
+
+	var _user$project$Works_Project_State$update = F2(
+		function (msg, model) {
+			return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+		});
+
+	var _user$project$Common_Helpers$remove = F2(
+		function (x, xs) {
+			var _p0 = xs;
+			if (_p0.ctor === '[]') {
+				return {ctor: '[]'};
+			} else {
+				var _p2 = _p0._1;
+				var _p1 = _p0._0;
+				return _elm_lang$core$Native_Utils.eq(x, _p1) ? _p2 : {
+					ctor: '::',
+					_0: _p1,
+					_1: A2(_user$project$Common_Helpers$remove, x, _p2)
+				};
+			}
+		});
+	var _user$project$Common_Helpers$find = F2(
+		function (pred, list) {
+			find:
+			while (true) {
+				var _p3 = list;
+				if (_p3.ctor === '::') {
+					var _p4 = _p3._0;
+					if (pred(_p4)) {
+						return _elm_lang$core$Maybe$Just(_p4);
+					} else {
+						var _v2 = pred,
+							_v3 = _p3._1;
+						pred = _v2;
+						list = _v3;
+						continue find;
+					}
+				} else {
+					return _elm_lang$core$Maybe$Nothing;
+				}
+			}
+		});
+
+	var _user$project$Types$Model = F4(
+		function (a, b, c, d) {
+			return {top: a, works: b, about: c, route: d};
+		});
+	var _user$project$Types$OnLocationChange = function (a) {
+		return {ctor: 'OnLocationChange', _0: a};
+	};
+	var _user$project$Types$AboutMsg = function (a) {
+		return {ctor: 'AboutMsg', _0: a};
+	};
+	var _user$project$Types$ProjectMsg = function (a) {
+		return {ctor: 'ProjectMsg', _0: a};
+	};
+	var _user$project$Types$WorksMsg = function (a) {
+		return {ctor: 'WorksMsg', _0: a};
+	};
+	var _user$project$Types$TopMsg = function (a) {
+		return {ctor: 'TopMsg', _0: a};
+	};
+	var _user$project$Types$NotFoundRoute = {ctor: 'NotFoundRoute'};
+	var _user$project$Types$About = {ctor: 'About'};
+	var _user$project$Types$Work = function (a) {
+		return {ctor: 'Work', _0: a};
+	};
+	var _user$project$Types$Works = {ctor: 'Works'};
+	var _user$project$Types$Top = {ctor: 'Top'};
+
+	var _user$project$Routing$matchers = _evancz$url_parser$UrlParser$oneOf(
+		{
+			ctor: '::',
+			_0: A2(_evancz$url_parser$UrlParser$map, _user$project$Types$Top, _evancz$url_parser$UrlParser$top),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_evancz$url_parser$UrlParser$map,
+					_user$project$Types$Works,
+					_evancz$url_parser$UrlParser$s('works')),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_evancz$url_parser$UrlParser$map,
+						_user$project$Types$Work,
+						A2(
+							_evancz$url_parser$UrlParser_ops['</>'],
+							_evancz$url_parser$UrlParser$s('works'),
+							_evancz$url_parser$UrlParser$string)),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_evancz$url_parser$UrlParser$map,
+							_user$project$Types$About,
+							_evancz$url_parser$UrlParser$s('about')),
+						_1: {ctor: '[]'}
+					}
+				}
+			}
+		});
+	var _user$project$Routing$parseLocation = function (location) {
+		var _p0 = A2(_evancz$url_parser$UrlParser$parseHash, _user$project$Routing$matchers, location);
+		if (_p0.ctor === 'Just') {
+			return _p0._0;
+		} else {
+			return _user$project$Types$NotFoundRoute;
+		}
+	};
+
+	var _user$project$State$update = F2(
+		function (msg, model) {
+			var _p0 = msg;
+			switch (_p0.ctor) {
+				case 'OnLocationChange':
+					var newRoute = _user$project$Routing$parseLocation(_p0._0);
+					return {
+						ctor: '_Tuple2',
+						_0: _elm_lang$core$Native_Utils.update(
+							model,
+							{route: newRoute}),
+						_1: _elm_lang$core$Platform_Cmd$none
+					};
+				case 'TopMsg':
+					var _p1 = A2(_user$project$Top_State$update, _p0._0, model.top);
+					var topModel = _p1._0;
+					var topCmd = _p1._1;
+					return {
+						ctor: '_Tuple2',
+						_0: _elm_lang$core$Native_Utils.update(
+							model,
+							{top: topModel}),
+						_1: topCmd
+					};
+				case 'WorksMsg':
+					var _p2 = A2(_user$project$Works_State$update, _p0._0, model.works);
+					var worksModel = _p2._0;
+					var worksCmd = _p2._1;
+					return {
+						ctor: '_Tuple2',
+						_0: _elm_lang$core$Native_Utils.update(
+							model,
+							{works: worksModel}),
+						_1: worksCmd
+					};
+				case 'ProjectMsg':
+					var _p3 = model.route;
+					if (_p3.ctor === 'Work') {
+						var projectMaybe = A2(
+							_user$project$Common_Helpers$find,
+							function (x) {
+								return _elm_lang$core$Native_Utils.eq(x.id, _p3._0);
+							},
+							model.works.projects);
+						var _p4 = projectMaybe;
+						if (_p4.ctor === 'Just') {
+							var _p6 = _p4._0;
+							var oldWorks = model.works;
+							var _p5 = A2(_user$project$Works_Project_State$update, _p0._0, _p6);
+							var projectModel = _p5._0;
+							var projectCmd = _p5._1;
+							var newProjects = A2(
+								_elm_lang$core$List$append,
+								{
+									ctor: '::',
+									_0: projectModel,
+									_1: {ctor: '[]'}
+								},
+								A2(_user$project$Common_Helpers$remove, _p6, model.works.projects));
+							var newWorks = _elm_lang$core$Native_Utils.update(
+								oldWorks,
+								{projects: newProjects});
+							return {
+								ctor: '_Tuple2',
+								_0: _elm_lang$core$Native_Utils.update(
+									model,
+									{works: newWorks}),
+								_1: projectCmd
+							};
+						} else {
+							return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+						}
+					} else {
+						return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+					}
+				default:
+					var _p7 = A2(_user$project$About_State$update, _p0._0, model.about);
+					var aboutModel = _p7._0;
+					var aboutCmd = _p7._1;
+					return {
+						ctor: '_Tuple2',
+						_0: _elm_lang$core$Native_Utils.update(
+							model,
+							{about: aboutModel}),
+						_1: aboutCmd
+					};
+			}
+		});
+	var _user$project$State$init = function (location) {
+		var route = _user$project$Routing$parseLocation(location);
+		return {
+			ctor: '_Tuple2',
+			_0: A4(_user$project$Types$Model, _user$project$Top_State$init, _user$project$Works_State$init, _user$project$About_State$init, route),
+			_1: _elm_lang$core$Platform_Cmd$none
+		};
+	};
+
+	var _user$project$Top_Styling$nameStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'grid-template-columns', _1: 'repeat(10, 40px)'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'grid-template-rows', _1: 'repeat(2, 100px)'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'background-color', _1: 'rgba(255,255,255,0.0)'},
+					_1: {ctor: '[]'}
+				}
+			}
+		});
+	var _user$project$Top_Styling$tabsContainerStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'space-around'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'flex-wrap', _1: 'no-wrap'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'height', _1: '50vh'},
+						_1: {ctor: '[]'}
+					}
+				}
+			}
+		});
+	var _user$project$Top_Styling$nameContainerStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'justify-content', _1: 'center'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'align-items', _1: 'center'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'flex-wrap', _1: 'no-wrap'},
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'height', _1: '50vh'},
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			}
+		});
+	var _user$project$Top_Styling$topContainerStyle = _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'position', _1: 'relative'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'min-height', _1: '100%'},
+				_1: {
+					ctor: '::',
+					_0: {ctor: '_Tuple2', _0: 'width', _1: '100%'},
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'flex-direction', _1: 'column'},
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			}
 		});
 
 	var _user$project$Top_View$about = A5(
@@ -12197,8 +12492,15 @@
 									_0: _elm_lang$html$Html_Attributes$controls(true),
 									_1: {
 										ctor: '::',
-										_0: _user$project$Works_Project_Styling$videoContentStyle,
-										_1: {ctor: '[]'}
+										_0: A2(
+											_elm_lang$html$Html_Attributes$property,
+											'muted',
+											_elm_lang$core$Json_Encode$bool(true)),
+										_1: {
+											ctor: '::',
+											_0: _user$project$Works_Project_Styling$videoContentStyle,
+											_1: {ctor: '[]'}
+										}
 									}
 								}
 							}
@@ -12390,22 +12692,18 @@
 							_1: {ctor: '[]'}
 						});
 				}
-			case 'NotFoundRoute':
+			case 'About':
 				return A2(
-					_elm_lang$html$Html$div,
-					{ctor: '[]'},
-					{
-						ctor: '::',
-						_0: _elm_lang$html$Html$text('No such route'),
-						_1: {ctor: '[]'}
-					});
+					_elm_lang$html$Html$map,
+					_user$project$Types$AboutMsg,
+					_user$project$About_View$root(model.about));
 			default:
 				return A2(
 					_elm_lang$html$Html$div,
 					{ctor: '[]'},
 					{
 						ctor: '::',
-						_0: _elm_lang$html$Html$text('not yet implemented'),
+						_0: _elm_lang$html$Html$text('No such route'),
 						_1: {ctor: '[]'}
 					});
 		}
